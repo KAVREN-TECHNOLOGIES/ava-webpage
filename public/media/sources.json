@@ -1,0 +1,278 @@
+[
+  {
+    "file": "hero-reference.jpg",
+    "source": "https://avanaplasticsurgery.com/themes/avana/images/slide-real-patient-pc.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-01.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/betzabe-leon-front.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-02.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/ariannys-cespedes.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-03.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/karla-roman-front.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-04.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/quiyana-marti.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-05.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/djouly.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "campaign-06.jpg",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/slide/jennifer-bieda.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "consultation-reference.jpg",
+    "source": "https://avanaplasticsurgery.com/themes/avana/images/model-slim-body.jpg",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "procedure-bbl.png",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/brazilian-butt-lift-procedure.png",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "procedure-liposuction.png",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/liposuction-procedure.png",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "procedure-tummy.png",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/tummy-tuck-procedure.png",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "procedure-breast.png",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/breast-augmentation-procedure.png",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "procedure-mommy.png",
+    "source": "https://cdn.avanaplasticsurgery.com/themes/avana/images/mommy-makeover-procedure.png",
+    "status": "downloaded",
+    "usage": "Temporary local layout reference. Not an AVA patient or result."
+  },
+  {
+    "file": "ava-hero.webp",
+    "source": "assets/source/ava-hero.png",
+    "originalFile": "hf_20261109_211820_b1824659-ef5a-42eb-9c5e-7b2f342f7ce0.png",
+    "status": "user-supplied",
+    "usage": "Apollo cover and consultation-card portrait. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "b1824659-ef5a-42eb-9c5e-7b2f342f7ce0",
+    "dimensions": [
+      2048,
+      1152
+    ],
+    "replaces": {
+      "originalFile": "hf_20261109_202454_6045e3dc-7d8b-479b-b26b-13a812df816d.png",
+      "archivedOriginal": "assets/source/archive/ava-hero-6045e3dc.png"
+    }
+  },
+  {
+    "file": "ava-bbl.webp",
+    "source": "assets/source/ava-bbl.png",
+    "originalFile": "hf_20261109_220102_dc2c219c-d6cf-4c28-8a70-0109ddfdf757.png",
+    "status": "user-supplied",
+    "usage": "Brazilian Butt Lift carousel card, detail page and shared procedure panel. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "dc2c219c-d6cf-4c28-8a70-0109ddfdf757",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ],
+    "replaces": {
+      "originalFile": "hf_20261109_204933_af49d68b-c449-40ee-84ec-a16063f9d1a7.png",
+      "archivedOriginal": "assets/source/archive/ava-bbl-af49d68b.png"
+    }
+  },
+  {
+    "file": "ava-liposuction.webp",
+    "source": "assets/source/ava-liposuction.png",
+    "originalFile": "hf_20261109_220325_e18eaaa7-b0f3-467d-ad26-bb3daedb76c1.png",
+    "status": "user-supplied",
+    "usage": "Liposuction carousel card, detail page and shared procedure panel. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "e18eaaa7-b0f3-467d-ad26-bb3daedb76c1",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ],
+    "replaces": {
+      "originalFile": "hf_20261109_220232_3db6ffbe-6337-4b02-8354-5f1954289a73.png",
+      "archivedOriginal": "assets/source/archive/ava-liposuction-3db6ffbe.png"
+    },
+    "history": [
+      {
+        "originalFile": "hf_20261109_205529_ae4db7d4-e7ce-4852-9dd2-ccf08fae13ff.png",
+        "archivedOriginal": "assets/source/archive/ava-liposuction-ae4db7d4.png"
+      }
+    ]
+  },
+  {
+    "file": "ava-tummy-tuck.webp",
+    "source": "assets/source/ava-tummy-tuck.png",
+    "originalFile": "hf_20261109_220845_3e48adbb-46e1-4456-9536-4331393a0fa7.png",
+    "status": "user-supplied",
+    "usage": "Abdominoplasty carousel card, detail page and shared procedure panel. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "3e48adbb-46e1-4456-9536-4331393a0fa7",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ],
+    "replaces": {
+      "originalFile": "hf_20261109_210051_0b41ac5a-3d34-499d-9448-5e48e726be92.png",
+      "archivedOriginal": "assets/source/archive/ava-tummy-tuck-0b41ac5a.png"
+    }
+  },
+  {
+    "file": "ava-mommy-makeover.webp",
+    "source": "assets/source/ava-mommy-makeover.png",
+    "originalFile": "hf_20261109_221700_8d07936d-193a-476b-9f62-7a0d8704b5ec.png",
+    "status": "user-supplied",
+    "usage": "Mommy Makeover carousel card, Apollo editorial feature, procedure detail and shared panel. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "8d07936d-193a-476b-9f62-7a0d8704b5ec",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ],
+    "replaces": {
+      "originalFile": "hf_20261109_210921_f5da4b3c-2584-4d96-9314-10785777d1d5.png",
+      "archivedOriginal": "assets/source/archive/ava-mommy-makeover-f5da4b3c.png"
+    }
+  },
+  {
+    "file": "ava-breast-augmentation.webp",
+    "source": "assets/source/ava-breast-augmentation.png",
+    "originalFile": "hf_20261109_215458_a070237a-ffed-4a63-a1d5-17ae134860ef.png",
+    "status": "user-supplied",
+    "usage": "Breast augmentation carousel card, detail page and shared procedure panel. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "a070237a-ffed-4a63-a1d5-17ae134860ef",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ]
+  },
+  {
+    "file": "ava-breast-lift.webp",
+    "source": "assets/source/ava-breast-lift.png",
+    "originalFile": "hf_20261109_215748_72287c4f-f86a-4d64-8693-4f01d30e6319.png",
+    "status": "user-supplied",
+    "usage": "Breast lift carousel card and procedure detail page. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "72287c4f-f86a-4d64-8693-4f01d30e6319",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ]
+  },
+  {
+    "file": "ava-breast-reduction.webp",
+    "source": "assets/source/ava-breast-reduction.png",
+    "originalFile": "hf_20261109_222039_7e79c13c-84ab-4f0c-8f02-f93f68191f54.png",
+    "status": "user-supplied",
+    "usage": "Breast reduction carousel card and procedure detail page. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "7e79c13c-84ab-4f0c-8f02-f93f68191f54",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ]
+  },
+  {
+    "file": "ava-facelift.webp",
+    "source": "assets/source/ava-facelift.png",
+    "originalFile": "hf_20261109_224903_3f2abd3d-7cb0-4698-9df9-cc954118246e.png",
+    "status": "user-supplied",
+    "usage": "Facelift carousel card, procedure directory, detail page and editorial gallery. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "3f2abd3d-7cb0-4698-9df9-cc954118246e",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ]
+  },
+  {
+    "file": "ava-rhinoplasty.webp",
+    "source": "assets/source/ava-rhinoplasty.png",
+    "originalFile": "hf_20261109_225517_0a991007-a565-4f9e-ae4d-9e6a5de53a04.png",
+    "status": "user-supplied",
+    "usage": "Rhinoplasty carousel card, procedure directory, detail page and editorial gallery. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "0a991007-a565-4f9e-ae4d-9e6a5de53a04",
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "originalDimensions": [
+      1536,
+      2048
+    ]
+  },
+  {
+    "file": "ava-footer.webp",
+    "source": "assets/source/ava-footer.png",
+    "originalFile": "hf_20261109_230034_d3a0e67a-3cfa-4454-8a66-fa3355cc4cef.png",
+    "status": "user-supplied",
+    "usage": "Shared footer photographic background on all pages. Illustrative model; not a clinical result.",
+    "higgsfieldJobId": "d3a0e67a-3cfa-4454-8a66-fa3355cc4cef",
+    "dimensions": [
+      2048,
+      1536
+    ],
+    "originalDimensions": [
+      2048,
+      1536
+    ]
+  }
+]

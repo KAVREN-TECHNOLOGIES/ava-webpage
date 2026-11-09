@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+assets/source/
+.impeccable/review/
+.impeccable/references/
+.impeccable/hook.cache.json

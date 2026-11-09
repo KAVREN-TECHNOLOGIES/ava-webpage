@@ -1,0 +1,87 @@
+/* Rounded campaign close, adapted from the supplied Apollo footer reference. */
+.ap-footer {
+  --focus-color: var(--ivory);
+  --ap-focus: var(--ivory);
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  min-height: clamp(600px, 50vw, 780px);
+  border-radius: 16px;
+  padding: 30px 32px;
+  color: var(--ivory);
+  background: var(--espresso);
+}
+.ap-footer__top { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 128px; max-width: min(46%, 560px); align-items: start; gap: 28px; }
+.ap-footer__location { font-size: 14px; line-height: 1.35; text-transform: uppercase; padding-top: 3px; }
+.ap-footer__location span { font-size: 12px; }
+.ap-footer__logo { display: block; width: 128px; }
+.ap-footer__logo img { width: 100%; height: auto; }
+.ap-footer__top nav { grid-column: 1/-1; display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 7px; }
+.ap-footer__top nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid rgba(245,241,234,.8);
+  background: rgba(6, 47, 37, .34);
+  border-radius: 30px;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  transition: color .2s, background .2s;
+}
+.ap-footer__top nav a:hover { color: var(--espresso); background: var(--ivory); }
+.ap-footer__art { position: absolute; bottom: -3px; left: 1%; width: 98%; height: auto; opacity: .23; pointer-events: none; }
+.ap-footer__photo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+.ap-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(13,28,22,.64), rgba(13,28,22,.08) 52%, transparent 75%), linear-gradient(0deg, rgba(13,28,22,.35), transparent 45%);
+  pointer-events: none;
+}
+.ap-footer__notes { padding: 22px 14px 8px; --focus-color: var(--espresso); --ap-focus: var(--espresso); }
+.ap-photo-disclosure { max-width: 82ch; font-size: 12px; line-height: 1.5; color: var(--muted); }
+.ap-footer__bottom { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 35px; padding-top: 10px; font-size: 12px; line-height: 1.4; }
+.ap-footer__bottom p { margin-right: auto; }
+.ap-footer__bottom nav { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
+.ap-footer__bottom nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.ap-footer__bottom nav a:hover { text-decoration: underline; }
+.ap-back-top { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--nude); border-radius: 50%; }
+.ap-back-top .icon { width: 18px; height: 18px; transform: rotate(-90deg); }
+@media (max-width: 1100px) {
+  .ap-footer__top { grid-template-columns: 1fr 108px; gap: 20px; }
+  .ap-footer__logo { width: 108px; }
+  .ap-footer__top nav a { padding-inline: 14px; font-size: 11px; }
+}
+@media (max-width: 760px) {
+  .ap-footer { min-height: 600px; padding: 26px; }
+  .ap-footer__photo { object-position: 68% 0%; }
+  .ap-footer__top { grid-template-columns: 1fr; max-width: 200px; gap: 22px; }
+  .ap-footer__location { order: 2; }
+  .ap-footer__logo { order: 1; }
+  .ap-footer__top nav { order: 3; }
+  .ap-footer__logo { justify-self: start; }
+  .ap-footer__top nav { grid-column: 1; flex-direction: column; align-items: stretch; max-width: 170px; }
+  .ap-footer__art { bottom: -3px; }
+  .ap-footer__bottom { gap: 8px 25px; }
+  .ap-footer__bottom p { flex-basis: 100%; }
+}
+@media (max-width: 600px) {
+  .ap-footer { min-height: 620px; padding: 24px 20px; }
+  .ap-footer__photo { object-position: 67% 0%; }
+  .ap-footer__top { gap: 20px; grid-template-columns: 1fr; max-width: 150px; }
+  .ap-footer__location { font-size: 12px; }
+  .ap-footer__location span { font-size: 10px; }
+  .ap-footer__logo { width: 98px; }
+  .ap-footer__top nav { gap: 7px; }
+  .ap-footer__top nav a { flex: none; font-size: 11px; padding: 10px 12px; }
+  .ap-footer__art { width: 98%; left: 1%; bottom: -3px; }
+  .ap-footer__notes { padding: 18px 12px 6px; }
+  .ap-photo-disclosure { font-size: 11px; }
+  .ap-footer__bottom { font-size: 11px; gap: 2px 18px; }
+  .ap-footer__bottom nav { gap: 18px; }
+  .ap-back-top { margin-left: auto; }
+}
