@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 import { LanguageProvider } from "../lib/language";
@@ -17,9 +18,25 @@ function page(content: ReactNode, path = "/") {
 describe("Contenido público de AVA", () => {
   it("abre la consulta directamente sin repetir su introducción", () => {
     page(<ConsultationPage />);
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Datos para la consulta");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tu belleza. A tu manera.");
     expect(screen.queryByRole("heading", { name: "Tu consulta" })).not.toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Revisar mis datos" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Continuar" })).toBeInTheDocument();
+  });
+  it("mantiene un único título visible al revisar los datos", async () => {
+    page(<ConsultationPage />);
+    const user = userEvent.setup();
+    await user.type(screen.getByLabelText("Nombre"), "Ana");
+    await user.type(screen.getByLabelText("Apellidos"), "Pérez");
+    await user.type(screen.getByLabelText("Teléfono"), "3055550123");
+    await user.type(screen.getByLabelText("Correo electrónico"), "ana@example.com");
+    await user.click(screen.getByLabelText(/He leído la política de privacidad/));
+    await user.click(screen.getByRole("button", { name: "Continuar" }));
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Revisión de datos");
+    expect(screen.queryByText("Hablemos de lo que tienes en mente.")).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Corregir mis datos" }));
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tu belleza. A tu manera.");
+    expect(screen.getByLabelText("Nombre")).toHaveValue("Ana");
   });
   it("presenta los procedimientos sin lemas de relleno ni perfiles sin confirmar", () => {
     page(<Home />);

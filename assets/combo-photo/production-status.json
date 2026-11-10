@@ -1,0 +1,69 @@
+{
+  "direction": "Latest user instruction: use the previously downloaded original A&E images in Try your combo.",
+  "referenceManifest": "reference-manifest.json",
+  "modelReference": "assets/source/ava-sunlounger.png",
+  "status": "Component switched to original A&E front/back combination images.54 optimized views cover27 canonical states among the existing six procedures; unsupported image transitions are disabled. Earlier clothed-photo pilot remains historical.",
+  "blockedPilot": {
+    "bodyReference": "reference/base-front.png",
+    "identityReference": "model-reference.png",
+    "tool": "image_gen.imagegen",
+    "outcome": "HTTP400 moderation_blocked, stage=input, category=sexual",
+    "requestId": "b2ec1ac6-740d-4d55-8d41-d1743dad071d",
+    "wardrobeRequested": "Fully opaque dusty rose bra and regular-coverage briefs, no exposed intimate anatomy."
+  },
+  "pendingDecision": "None requested. Current deliverable is the seven-image clothed pilot and its exact prompts.",
+  "previousWork": "The earlier 29 clothed mannequin strips remain in assets/combo-production and public/media/combo. They do not represent the newly requested model direction or final visual acceptance.",
+  "swimwearPilot": {
+    "front": "pilots/swim-base-front-v2.png",
+    "back": "pilots/swim-base-back.png",
+    "requestId": "cd8a644a-a879-4e89-9ddd-80d465378b06",
+    "prompts": "swim-prompts-v2.json",
+    "combinedState": "No output: moderation_blocked, stage=output, category=sexual",
+    "geometry": "Pose/proportions approximated from instructions, not an exact transfer of source silhouette."
+  },
+  "abdomenWaistAlternative": {
+    "requestId": "57703592-6005-4016-9e9e-e9bbd8b82770",
+    "status": "Rejected by image-tool output moderation; no image produced.",
+    "scope": "Waist and covered abdomen only; all other regions preserved."
+  },
+  "handoff": {
+    "zip": "deliverables/AVA-combo-assets.zip",
+    "contents": "One model reference, two swimsuit base previews, 29 original mannequin strips, 29 optimized strips, file inventory and state manifest.",
+    "folder": "deliverables/AVA-combo-assets"
+  },
+  "clothed45Pilot": {
+    "folder": "clothed-45-v2",
+    "base": "clothed-45-v2/base.png",
+    "manifest": "clothed-45-v2/manifest.json",
+    "prompts": "clothed-45-v2/prompts.json",
+    "tool": "image_gen.imagegen",
+    "singles": [
+      "bbl",
+      "liposuccion",
+      "abdominoplastia",
+      "aumento-de-pecho",
+      "levantamiento-de-pecho",
+      "reduccion-de-pecho"
+    ],
+    "method": "All six edited separately from the same corrected baseline.",
+    "quality": "Same canvas and visually stable pose/framing/lighting; fine textures are not pixel-identical. Individual change strength varies. No claim of exact clinical outcomes or final visual acceptance.",
+    "archive": "deliverables/AVA-combo-clothed-45-pilot.zip",
+    "integration": {
+      "component": "src/components/ComboExplorer.tsx",
+      "assets": "public/media/combo-photo",
+      "view": "fixed front three-quarter",
+      "visualMode": "one selected procedure at a time",
+      "consultationSelectionLimit": 3
+    }
+  },
+  "activeIntegration": {
+    "component": "src/components/ComboExplorer.tsx",
+    "assets": "public/media/combo-ae",
+    "manifest": "assets/combo-ae/manifest.json",
+    "states": 27,
+    "views": [
+      "front",
+      "back"
+    ]
+  }
+}

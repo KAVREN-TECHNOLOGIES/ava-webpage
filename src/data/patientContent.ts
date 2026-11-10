@@ -4,52 +4,62 @@ export type Answer = Readonly<{ question: Localized; answer: Localized }>;
 export const patientQuestions: readonly Answer[] = [
   {
     question: {
-      es: "¿Cuál es la diferencia entre liposucción y abdominoplastia?",
-      en: "How do liposuction and a tummy tuck differ?",
+      es: "¿Qué distingue a AVA Cosmetic Surgery?",
+      en: "What sets AVA Cosmetic Surgery apart?",
     },
     answer: {
-      es: "La liposucción retira grasa localizada. La abdominoplastia también elimina piel sobrante y puede reparar músculos abdominales debilitados o separados.",
-      en: "Liposuction removes localized fat. A tummy tuck also removes excess skin and may repair weakened or separated abdominal muscles.",
+      es: "En AVA, la consulta parte de tus objetivos, tu historial médico y las zonas que deseas tratar. El plan debe explicar las opciones, los riesgos y la recuperación para que puedas tomar una decisión informada.",
+      en: "At AVA, your consultation starts with your goals, medical history and areas of concern. The plan should explain your options, risks and recovery so you can make an informed decision.",
     },
   },
   {
     question: {
-      es: "¿El BBL utiliza implantes?",
-      en: "Does a BBL use implants?",
+      es: "¿Cómo sé qué procedimiento es adecuado para mí?",
+      en: "How can I choose the right procedure?",
     },
     answer: {
-      es: "El BBL utiliza grasa de la propia paciente, obtenida mediante liposucción. La cirugía con implantes glúteos es un procedimiento diferente.",
-      en: "A BBL uses the patient's own fat, obtained through liposuction. Buttock implant surgery is a different procedure.",
+      es: "La elección depende de tus objetivos, tu anatomía y tu salud. Durante la consulta, el cirujano valorará las opciones y te explicará qué puede aportar cada procedimiento y cuáles son sus límites.",
+      en: "The choice depends on your goals, anatomy and health. During your consultation, the surgeon will assess your options and explain what each procedure can achieve and its limitations.",
     },
   },
   {
     question: {
-      es: "¿Se pueden combinar varias cirugías?",
-      en: "Can procedures be combined?",
+      es: "¿Qué tan segura es la cirugía estética?",
+      en: "What should I know about surgical safety?",
     },
     answer: {
-      es: "Algunas intervenciones pueden combinarse. La decisión depende de la evaluación médica, la duración de la cirugía y el plan de recuperación. En otros casos se realizan por etapas.",
-      en: "Some procedures can be combined. The decision depends on medical assessment, surgical duration and the recovery plan. Other cases require separate stages.",
+      es: "Toda cirugía implica riesgos. La valoración debe revisar tu salud, la técnica, la anestesia y el centro donde se realizará. El cirujano te explicará los riesgos de tu caso y cómo se abordan.",
+      en: "Every surgery carries risks. Assessment should cover your health, the technique, anesthesia and surgical facility. Your surgeon will explain the risks relevant to your case and how they are managed.",
     },
   },
   {
     question: {
-      es: "¿Cuándo se ven los resultados?",
-      en: "When are results visible?",
+      es: "¿Cuánto tardaré en ver los resultados?",
+      en: "When should I expect to see my results?",
     },
     answer: {
-      es: "La inflamación inicial puede ocultar el resultado. La evolución depende de la intervención y de la cicatrización; el cirujano debe explicar el plazo previsto para cada caso.",
-      en: "Initial swelling can obscure the result. Progress depends on the procedure and healing; your surgeon should explain the expected timeline for your case.",
+      es: "Los cambios pueden empezar a apreciarse pronto, pero la inflamación puede ocultar el resultado inicial. El aspecto final se define de forma gradual durante los meses siguientes, según el procedimiento y la cicatrización.",
+      en: "Changes may become noticeable early, but swelling can obscure the initial result. The final appearance develops gradually over the following months, depending on the procedure and your healing.",
     },
   },
   {
     question: {
-      es: "¿Qué debe incluir el presupuesto?",
-      en: "What should a quote include?",
+      es: "¿Necesito una consulta antes de operarme?",
+      en: "Is a consultation needed before surgery?",
     },
     answer: {
-      es: "El procedimiento, los honorarios del cirujano, la anestesia, el centro quirúrgico y las revisiones incluidas. Confirma también los gastos adicionales y las condiciones de cancelación.",
-      en: "The procedure, surgeon's fees, anesthesia, surgical facility and included follow-up visits. Also confirm additional costs and cancellation terms.",
+      es: "Sí. La consulta permite valorar tu salud, revisar tus antecedentes y medicación, definir tus objetivos y resolver dudas sobre las opciones, los riesgos y la recuperación.",
+      en: "Yes. The consultation allows your health, medical history and medications to be reviewed, your goals to be discussed and your questions about options, risks and recovery to be answered.",
+    },
+  },
+  {
+    question: {
+      es: "¿Tendré que guardar reposo después del procedimiento?",
+      en: "What recovery time should I plan for?",
+    },
+    answer: {
+      es: "Sí, debes planificar un período de recuperación. El tiempo para volver al trabajo, hacer ejercicio o viajar depende de la intervención y de tu evolución. El cirujano te indicará cuándo retomar cada actividad.",
+      en: "Plan for a recovery period. Returning to work, exercise or travel depends on the procedure and your progress. Your surgeon will advise when you can resume each activity.",
     },
   },
 ];

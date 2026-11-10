@@ -1,4 +1,5 @@
 node_modules/
+.prerender/
 dist/
 *.local
 .DS_Store
@@ -11,3 +12,8 @@ assets/source/
 .impeccable/review/
 .impeccable/references/
 .impeccable/hook.cache.json
+
+# Local delivery bundles and Blender working files.
+deliverables/
+assets/**/*.blend
+assets/**/*.blend[0-9]

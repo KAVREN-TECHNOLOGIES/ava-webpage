@@ -1,0 +1,304 @@
+{
+  "purpose": "Quality pilot for AVA Try your combo",
+  "status": "User accepted the pilot style and requested a softer fuller baseline; revision v2 produced for review.",
+  "decision": "Author a finished master in 3D; deliver pre-rendered complete states to the website.",
+  "firstDelivery": {
+    "states": [
+      "base",
+      "aumento-de-pecho",
+      "levantamiento-de-pecho",
+      "reduccion-de-pecho"
+    ],
+    "views": [
+      "front",
+      "profile"
+    ],
+    "imageCount": 8,
+    "direction": "One adult female master with credible anatomy, editorial studio finish and an identical fixed pose, camera, crop, materials and lighting across states.",
+    "geometry": "Anatomically authored sculpt targets; preserve the master topology and correct overlapping effects manually. Rejected formula-generated shapes are not final targets.",
+    "review": "Judge contour and anatomy before surface detail. Distinguish volume increase, volume reduction and elevation. Inspect at actual desktop and mobile sizes.",
+    "outputs": [
+      "Editable native 3D scene",
+      "Named master/target meshes or morphs",
+      "Eight high-resolution PNG renders",
+      "Camera/light/material setup"
+    ]
+  },
+  "roles": {
+    "characterArtist": "Master anatomy, procedure-specific sculpt targets, corrective shapes and final surface approval.",
+    "assistant": "Production specification, asset organization, repeatable rendering/export, optimized web images and combo component implementation.",
+    "user": "Assess the pilot against the intended visual quality before expanding the image library."
+  },
+  "continuation": {
+    "visualStates": 29,
+    "views": [
+      "front",
+      "back"
+    ],
+    "outputImageCount": 58,
+    "generationRule": "Up to three selections from three body procedures and at most one of three breast procedures.",
+    "integration": "Manifest lookup by selected procedure IDs, paired preload and crossfade, AVA typography/palette and existing consultation handoff."
+  },
+  "capabilitiesVerified": {
+    "installed": "Blender5.2.3",
+    "available3DGenerationTools": "Mesh generation and automatic rigging; these do not establish the quality of procedure-specific anatomy.",
+    "characterCreatorOrDazAssets": "No production-ready character/morph asset verified in the workspace.",
+    "scopeLimit": "Do not promise a professional anatomical sculpture based on the prior scripted deformation workflow."
+  },
+  "reference": "https://aeplasticsurgerymiami.com/",
+  "states": [
+    {
+      "id": "base",
+      "procedures": [],
+      "status": "planned"
+    },
+    {
+      "id": "aumento-de-pecho",
+      "procedures": [
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "levantamiento-de-pecho",
+      "procedures": [
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "reduccion-de-pecho",
+      "procedures": [
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl",
+      "procedures": [
+        "bbl"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__aumento-de-pecho",
+      "procedures": [
+        "bbl",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__levantamiento-de-pecho",
+      "procedures": [
+        "bbl",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__reduccion-de-pecho",
+      "procedures": [
+        "bbl",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion",
+      "procedures": [
+        "liposuccion"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__aumento-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__levantamiento-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__reduccion-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__liposuccion",
+      "procedures": [
+        "bbl",
+        "liposuccion"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__liposuccion__aumento-de-pecho",
+      "procedures": [
+        "bbl",
+        "liposuccion",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__liposuccion__levantamiento-de-pecho",
+      "procedures": [
+        "bbl",
+        "liposuccion",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__liposuccion__reduccion-de-pecho",
+      "procedures": [
+        "bbl",
+        "liposuccion",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "abdominoplastia",
+      "procedures": [
+        "abdominoplastia"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "abdominoplastia__aumento-de-pecho",
+      "procedures": [
+        "abdominoplastia",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "abdominoplastia__levantamiento-de-pecho",
+      "procedures": [
+        "abdominoplastia",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "abdominoplastia__reduccion-de-pecho",
+      "procedures": [
+        "abdominoplastia",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__abdominoplastia",
+      "procedures": [
+        "bbl",
+        "abdominoplastia"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__abdominoplastia__aumento-de-pecho",
+      "procedures": [
+        "bbl",
+        "abdominoplastia",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__abdominoplastia__levantamiento-de-pecho",
+      "procedures": [
+        "bbl",
+        "abdominoplastia",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__abdominoplastia__reduccion-de-pecho",
+      "procedures": [
+        "bbl",
+        "abdominoplastia",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__abdominoplastia",
+      "procedures": [
+        "liposuccion",
+        "abdominoplastia"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__abdominoplastia__aumento-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "abdominoplastia",
+        "aumento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__abdominoplastia__levantamiento-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "abdominoplastia",
+        "levantamiento-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "liposuccion__abdominoplastia__reduccion-de-pecho",
+      "procedures": [
+        "liposuccion",
+        "abdominoplastia",
+        "reduccion-de-pecho"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "bbl__liposuccion__abdominoplastia",
+      "procedures": [
+        "bbl",
+        "liposuccion",
+        "abdominoplastia"
+      ],
+      "status": "planned"
+    }
+  ],
+  "pilotArtifact": {
+    "path": "assets/combo-production/pilot-breast-v2.png",
+    "type": "raster visual proof",
+    "views": 8,
+    "states": [
+      "Base",
+      "Aumento",
+      "Levantamiento",
+      "Reducción"
+    ],
+    "source": "Built-in image_gen edit of pilot-breast-v1.png following the user baseline correction.",
+    "geometry": "No new 3D morph geometry is represented by this raster proof.",
+    "prompts": "imagegen-baseline-v2.json"
+  },
+  "baselineDirection": {
+    "body": "Moderately fuller, soft abdomen and flanks; less cinched waist.",
+    "breast": "Moderate overall volume with deflated upper pole, lower position and descending lower pole.",
+    "glutes": "Slightly flatter with less posterior projection.",
+    "consistency": "Keep this same body in every breast-only variant; chest procedures do not also change waist, abdomen or buttocks."
+  }
+}

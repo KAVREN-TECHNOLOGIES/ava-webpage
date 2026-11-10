@@ -1,0 +1,44 @@
+[
+  {
+    "id": "base",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 69266
+  },
+  {
+    "id": "bbl",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 64254
+  },
+  {
+    "id": "liposuccion",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 60872
+  },
+  {
+    "id": "abdominoplastia",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 65204
+  },
+  {
+    "id": "aumento-de-pecho",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 65728
+  },
+  {
+    "id": "levantamiento-de-pecho",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 71250
+  },
+  {
+    "id": "reduccion-de-pecho",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 66274
+  }
+]

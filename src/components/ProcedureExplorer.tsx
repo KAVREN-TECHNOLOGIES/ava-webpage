@@ -5,7 +5,7 @@ import {
   useState,
   type KeyboardEvent,
 } from "react";
-import { Link } from "react-router-dom";
+import { LocalizedLink as Link } from "../lib/LocalizedRouting";
 import { categoryLabels, procedures, type Procedure } from "../data/procedures";
 import { useLanguage } from "../lib/language";
 import { Icon } from "./Icon";

@@ -1,0 +1,31 @@
+{
+  "source_sha256": "161e9141852244567c049b0d8755b62936b198c20b33c29ae8bc5a6173939ccf",
+  "source_metadata": {
+    "extras": {
+      "author": "Devlane (https://sketchfab.com/piyush20298)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/free-female-mannequin-base-mesh-187300a221c04178b96b84bf9cab97e0",
+      "title": "Free Female Mannequin Base Mesh"
+    },
+    "generator": "Sketchfab-16.99.0",
+    "version": "2.0"
+  },
+  "height_m": 1.75,
+  "vertices": 48872,
+  "bones": 19,
+  "unweighted_vertices": 0,
+  "morph_maximum_displacement_m": {
+    "bbl": 0.045,
+    "liposuccion": 0.01721,
+    "abdominoplastia": 0.02516,
+    "aumento-de-pecho": 0.04642,
+    "levantamiento-de-pecho": 0.02604,
+    "reduccion-de-pecho": 0.02524
+  },
+  "poses": {
+    "1": "Original",
+    "31": "Brazos abiertos",
+    "61": "Contrapposto",
+    "91": "Mano en cintura"
+  }
+}

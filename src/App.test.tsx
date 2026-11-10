@@ -34,4 +34,15 @@ describe("Diseño editorial principal", () => {
     expect(screen.getAllByRole("contentinfo")).toHaveLength(1);
     screen.getAllByRole("link", { name: "AVA Cosmetic Surgery · Inicio" }).forEach(link => expect(link).toHaveAttribute("href", "/"));
   });
+
+  it("abre la calculadora en su ruta y la enlaza desde la navegación", async () => {
+    window.history.replaceState({}, "", "/bmi");
+    render(<App />);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Calculadora de BMI");
+    await waitFor(() => expect(document.title).toBe("Calculadora de BMI · AVA Cosmetic Surgery"));
+    expect(screen.getByRole("link", { name: "BMI" })).toHaveAttribute("href", "/bmi");
+    expect(screen.getByRole("link", { name: "BMI" })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("link", { name: "Calculadora de BMI" })).toHaveAttribute("href", "/bmi");
+    expect(screen.getAllByRole("contentinfo")).toHaveLength(1);
+  });
 });

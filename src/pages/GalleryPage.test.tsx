@@ -20,7 +20,7 @@ describe("Destino de antes y después", () => {
     ).toBeInTheDocument();
     expect(
       screen.queryByRole("button", {
-        name: "Ampliar fotografía de referencia 1",
+        name: "Ampliar fotografía 1",
       }),
     ).not.toBeInTheDocument();
     expect(document.querySelector(".clinical-slot")).not.toBeInTheDocument();

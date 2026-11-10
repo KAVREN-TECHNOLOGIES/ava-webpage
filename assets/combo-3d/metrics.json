@@ -1,0 +1,11 @@
+{
+  "vertices": 76765,
+  "maximum_displacement_m": {
+    "bbl": 0.0547,
+    "liposuccion": 0.03403,
+    "abdominoplastia": 0.04123,
+    "aumento-de-pecho": 0.05267,
+    "levantamiento-de-pecho": 0.02857,
+    "reduccion-de-pecho": 0.04125
+  }
+}

@@ -1,0 +1,490 @@
+[
+  {
+    "variable": "comboDefault",
+    "id": "combo-default",
+    "procedures": [],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-back-scaled.png"
+  },
+  {
+    "variable": "comboNatural",
+    "id": "combo-natural",
+    "procedures": [
+      "Natural"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-back-scaled.png"
+  },
+  {
+    "variable": "comboBreastAugmentation",
+    "id": "btn-breast-augmentation",
+    "procedures": [
+      "Breast Augmentation"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ba-only_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ba-only_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastReduction",
+    "id": "btn-breast-reduction",
+    "procedures": [
+      "Breast Reduction"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/br-only_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/br-only_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360",
+    "id": "combo-lipo-360",
+    "procedures": [
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipo-only_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipo-only_back-scaled.png"
+  },
+  {
+    "variable": "comboTummyTuck",
+    "id": "combo-tummy-tuck",
+    "procedures": [
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/tt-only_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/tt-only_back-scaled.png"
+  },
+  {
+    "variable": "comboBBL",
+    "id": "combo-bbl",
+    "procedures": [
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbl-only_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbl-only_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastLift",
+    "id": "combo-breastlift",
+    "procedures": [
+      "Breast Lift"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bl-only_front-1-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bl-only_back-1-scaled.png"
+  },
+  {
+    "variable": "comboAbdominalEtching",
+    "id": "combo-abdominaletching",
+    "procedures": [
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/etching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/etching_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastAugmentationBBL",
+    "id": "combo-breastaugmentation-bbl",
+    "procedures": [
+      "Breast Augmentation",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastAugmentationTT",
+    "id": "combo-breastaugmentation-tt",
+    "procedures": [
+      "Breast Augmentation",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/batt_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/batt_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastAugmentationEtching",
+    "id": "combo-breastaugmentation-etching",
+    "procedures": [
+      "Breast Augmentation",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/baetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/baetching_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastReductionLipo360",
+    "id": "combo-breastreduction-lipo360",
+    "procedures": [
+      "Breast Reduction",
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brlipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brlipo_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastReductionBBL",
+    "id": "combo-breastreduction-bbl",
+    "procedures": [
+      "Breast Reduction",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastReductionTT",
+    "id": "combo-breastreduction-tt",
+    "procedures": [
+      "Breast Reduction",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brtt_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brtt_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastReductionEtching",
+    "id": "combo-breastreduction-etching",
+    "procedures": [
+      "Breast Reduction",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bretching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bretching_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360TummyTuck",
+    "id": "combo-lipo360-tummy",
+    "procedures": [
+      "Liposuction 360",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipott_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipott_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BreastAugmentation",
+    "id": "combo-lipo360-breastaugmentation",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Augmentation"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipo_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BackLipo",
+    "id": "combo-lipo360-backlipo",
+    "procedures": [
+      "Liposuction 360",
+      "Back Lipo"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360Etching",
+    "id": "combo-lipo360-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipoetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipoetching_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BBL",
+    "id": "combo-lipo360-bbl",
+    "procedures": [
+      "Liposuction 360",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipobbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipobbl_back-scaled.png"
+  },
+  {
+    "variable": "comboEtchingBBL",
+    "id": "combo-etching-bbl",
+    "procedures": [
+      "Abdominal Etching",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbletching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbletching_back-scaled.png"
+  },
+  {
+    "variable": "comboTTBBL",
+    "id": "combo-tt-bbl",
+    "procedures": [
+      "Tummy Tuck",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbltt_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbltt_back-scaled.png"
+  },
+  {
+    "variable": "comboTTEtching",
+    "id": "combo-tt-etching",
+    "procedures": [
+      "Tummy Tuck",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ttetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ttetching_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastLiftLipo",
+    "id": "combo-bl-lipo",
+    "procedures": [
+      "Breast Lift",
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_front-1-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_back-1-scaled.png"
+  },
+  {
+    "variable": "comboBreastLifBBL",
+    "id": "combo-bl-bbl",
+    "procedures": [
+      "Breast Lift",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blbbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blbbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastLifTT",
+    "id": "combo-bl-tt",
+    "procedures": [
+      "Breast Lift",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bltt_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bltt_back-scaled.png"
+  },
+  {
+    "variable": "comboBreastLifEtching",
+    "id": "combo-bl-etching",
+    "procedures": [
+      "Breast Lift",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletching_back-1-scaled.png"
+  },
+  {
+    "variable": "comboBBlTT",
+    "id": "combo-bbl-tt",
+    "procedures": [
+      "BBL",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bbltt_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bbltt_back-scaled.png"
+  },
+  {
+    "variable": "comboBBLTTBa",
+    "id": "combo-bbl-tt-ba",
+    "procedures": [
+      "BBL",
+      "Breast Augmentation",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battbbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battbbl_back-scaled.png"
+  },
+  {
+    "variable": "comboEtchingTTBa",
+    "id": "combo-etching-tt-ba",
+    "procedures": [
+      "Abdominal Etching",
+      "Breast Augmentation",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battetching_back-scaled.png"
+  },
+  {
+    "variable": "comboBaLipo360Etching",
+    "id": "combo-ba-lipo-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Augmentation",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipoetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipoetching_back-scaled.png"
+  },
+  {
+    "variable": "comboBrLipo360Etching",
+    "id": "combo-br-lipo-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Reduction",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bretchinglipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bretchinglipo_back-scaled.png"
+  },
+  {
+    "variable": "comboBrLipo360TT",
+    "id": "combo-br-lipo-tt",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Reduction",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brttlipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brttlipo_back-scaled.png"
+  },
+  {
+    "variable": "comboBrBBLEtching",
+    "id": "combo-br-bbl-etching",
+    "procedures": [
+      "BBL",
+      "Breast Reduction",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbletching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbletching_back-scaled.png"
+  },
+  {
+    "variable": "comboBaBBLEtching",
+    "id": "combo-ba-bbl-etching",
+    "procedures": [
+      "BBL",
+      "Breast Augmentation",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbletching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbletching_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BaTummyTuck",
+    "id": "combo-lipo-ba-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Augmentation",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipott_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipott_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BlEtching",
+    "id": "combo-lipo-bl-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Lift",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletchinglipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletchinglipo_back-scaled.png"
+  },
+  {
+    "variable": "comboLipo360BlTT",
+    "id": "combo-lipo-bl-tt",
+    "procedures": [
+      "Liposuction 360",
+      "Breast Lift",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blttlipo_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blttlipo_back-scaled.png"
+  },
+  {
+    "variable": "comboBBLBlEtching",
+    "id": "combo-lipo-bl-tt",
+    "procedures": [
+      "BBL",
+      "Breast Lift",
+      "Abdominal Etching"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletchingbbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bletchingbbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBBLLipoBa",
+    "id": "combo-bbl-lipo-ba",
+    "procedures": [
+      "BBL",
+      "Breast Augmentation",
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/balipobbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/balipobbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBBLLipoBr",
+    "id": "combo-bbl-lipo-br",
+    "procedures": [
+      "BBL",
+      "Breast Reduction",
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brlipobbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brlipobbl_back-scaled.png"
+  },
+  {
+    "variable": "comboAeBrTT",
+    "id": "combo-ae-br-tt",
+    "procedures": [
+      "Abdominal Etching",
+      "Breast Reduction",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brttetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brttetching_back-scaled.png"
+  },
+  {
+    "variable": "comboBBlBlLipo",
+    "id": "combo-bl-lipo-bbl",
+    "procedures": [
+      "BBL",
+      "Breast Lift",
+      "Liposuction 360"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bllipobbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bllipobbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBBlBlTT",
+    "id": "combo-bl-tt-bbl",
+    "procedures": [
+      "BBL",
+      "Breast Lift",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttbbl_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttbbl_back-scaled.png"
+  },
+  {
+    "variable": "comboBlTTEtching",
+    "id": "combo-bl-tt-etching",
+    "procedures": [
+      "Abdominal Etching",
+      "Breast Lift",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttetching_back-scaled.png"
+  },
+  {
+    "variable": "comboLipoTTEtching",
+    "id": "combo-lipo-tt-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Abdominal Etching",
+      "Tummy Tuck"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/lipottetching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/lipottetching_back-scaled.png"
+  },
+  {
+    "variable": "comboLipoBBLEtching",
+    "id": "combo-lipo-bbl-etching",
+    "procedures": [
+      "Liposuction 360",
+      "Abdominal Etching",
+      "BBL"
+    ],
+    "front": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/lipobbletching_front-scaled.png",
+    "back": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/lipobbletching_back-scaled.png"
+  }
+]

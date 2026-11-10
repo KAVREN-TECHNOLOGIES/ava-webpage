@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { LocalizedLink as Link } from "../lib/LocalizedRouting";
 import { media } from "../data/media";
 import { brandLockup } from "../data/brand";
+import { company } from "../data/company";
 import { useLanguage } from "../lib/language";
 import { Icon } from "./Icon";
+import { CompanyAddress } from "./CompanyAddress";
+import { BrandLogo } from "./BrandLogo";
 import "./footer.css";
 
 export function Footer() {
@@ -12,9 +15,9 @@ export function Footer() {
       <div className="ap-footer">
         <img className="ap-footer__photo" src={media.footer} alt="" width="2048" height="1536" loading="lazy" />
         <div className="ap-footer__top">
-          <p className="ap-footer__location">Miami, Florida<br /><span>Cosmetic Surgery</span></p>
-          <Link className="ap-footer__logo" to="/" aria-label="AVA Cosmetic Surgery · Inicio">
-            <img src="/brand/ava-lockup-ivory.svg" alt="" width="119" height="57" loading="lazy" />
+          <CompanyAddress className="ap-footer__location" />
+          <Link className="ap-footer__logo" to="/" aria-label={t("AVA Cosmetic Surgery · Inicio", "AVA Cosmetic Surgery · Home")}>
+            <BrandLogo />
           </Link>
           <nav aria-label={t("Enlaces del pie de página", "Footer links")}>
             <Link to="/procedimientos">{t("Procedimientos", "Procedures")}</Link>
@@ -28,13 +31,12 @@ export function Footer() {
         </svg>
       </div>
       <div className="ap-footer__notes">
-        <p className="ap-photo-disclosure">{t(
-          "Imágenes aportadas por AVA y referencias de Avana Plastic Surgery. No representan resultados clínicos.",
-          "Images supplied by AVA and references from Avana Plastic Surgery. These are not clinical results.",
-        )}</p>
         <div className="ap-footer__bottom">
-          <p>© {new Date().getFullYear()} AVA Cosmetic Surgery</p>
+          <div className="ap-footer__identity">
+            <p>© {new Date().getFullYear()} {company.legalName}</p>
+          </div>
           <nav aria-label={t("Más información", "More information")}>
+            <Link to="/bmi">{t("Calculadora de BMI", "BMI calculator")}</Link>
             <Link to="/resultados">{t("Fotografías", "Photography")}</Link>
             <Link to="/financiamiento">{t("Costos", "Costs")}</Link>
           </nav>

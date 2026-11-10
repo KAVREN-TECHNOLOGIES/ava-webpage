@@ -82,7 +82,7 @@
     "source": "assets/source/ava-hero.png",
     "originalFile": "hf_20261109_211820_b1824659-ef5a-42eb-9c5e-7b2f342f7ce0.png",
     "status": "user-supplied",
-    "usage": "Apollo cover and consultation-card portrait. Illustrative model; not a clinical result.",
+    "usage": "Home cover photograph. Illustrative model; not a clinical result.",
     "higgsfieldJobId": "b1824659-ef5a-42eb-9c5e-7b2f342f7ce0",
     "dimensions": [
       2048,
@@ -164,7 +164,7 @@
     "source": "assets/source/ava-mommy-makeover.png",
     "originalFile": "hf_20261109_221700_8d07936d-193a-476b-9f62-7a0d8704b5ec.png",
     "status": "user-supplied",
-    "usage": "Mommy Makeover carousel card, Apollo editorial feature, procedure detail and shared panel. Illustrative model; not a clinical result.",
+    "usage": "Mommy Makeover carousel card, procedure detail and shared panel. Illustrative model; not a clinical result.",
     "higgsfieldJobId": "8d07936d-193a-476b-9f62-7a0d8704b5ec",
     "dimensions": [
       1200,
@@ -273,6 +273,700 @@
     "originalDimensions": [
       2048,
       1536
+    ]
+  },
+  {
+    "file": "ava-sunlounger.webp",
+    "source": "assets/source/ava-sunlounger.png",
+    "originalFile": "hf_20261110_210029_c86697bc-58b8-4c91-ae4b-05db16e778a9.png",
+    "status": "user-supplied",
+    "usage": "Shared contact campaign background. On the homepage, the form replaces the former Mommy Makeover banner.",
+    "higgsfieldJobId": "c86697bc-58b8-4c91-ae4b-05db16e778a9",
+    "dimensions": [
+      2048,
+      1536
+    ],
+    "originalDimensions": [
+      2048,
+      1536
+    ]
+  },
+  {
+    "file": "combo-photo/base.webp",
+    "source": "assets/combo-photo/clothed-45-v2/base.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/bbl.webp",
+    "source": "assets/combo-photo/clothed-45-v2/bbl.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/liposuccion.webp",
+    "source": "assets/combo-photo/clothed-45-v2/liposuccion.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/abdominoplastia.webp",
+    "source": "assets/combo-photo/clothed-45-v2/abdominoplastia.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/aumento-de-pecho.webp",
+    "source": "assets/combo-photo/clothed-45-v2/aumento-de-pecho.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/levantamiento-de-pecho.webp",
+    "source": "assets/combo-photo/clothed-45-v2/levantamiento-de-pecho.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-photo/reduccion-de-pecho.webp",
+    "source": "assets/combo-photo/clothed-45-v2/reduccion-de-pecho.png",
+    "status": "generated",
+    "tool": "image_gen.imagegen",
+    "usage": "Fixed three-quarter individual procedure preview in Try your combo.",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "promptRecord": "assets/combo-photo/clothed-45-v2/prompts.json"
+  },
+  {
+    "file": "combo-ae/base-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-front-scaled.png",
+    "original": "deliverables/AE-original-references/01-base/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, base, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/base-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-back-scaled.png",
+    "original": "deliverables/AE-original-references/01-base/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, base, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ba-only_front-scaled.png",
+    "original": "deliverables/AE-original-references/02-breast-augmentation/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ba-only_back-scaled.png",
+    "original": "deliverables/AE-original-references/02-breast-augmentation/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/br-only_front-scaled.png",
+    "original": "deliverables/AE-original-references/03-breast-reduction/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/br-only_back-scaled.png",
+    "original": "deliverables/AE-original-references/03-breast-reduction/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipo-only_front-scaled.png",
+    "original": "deliverables/AE-original-references/04-liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipo-only_back-scaled.png",
+    "original": "deliverables/AE-original-references/04-liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/tt-only_front-scaled.png",
+    "original": "deliverables/AE-original-references/05-tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/tt-only_back-scaled.png",
+    "original": "deliverables/AE-original-references/05-tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbl-only_front-scaled.png",
+    "original": "deliverables/AE-original-references/06-bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbl-only_back-scaled.png",
+    "original": "deliverables/AE-original-references/06-bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bl-only_front-1-scaled.png",
+    "original": "deliverables/AE-original-references/07-breast-lift/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bl-only_back-1-scaled.png",
+    "original": "deliverables/AE-original-references/07-breast-lift/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/09-breast-augmentation_bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/babbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/09-breast-augmentation_bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/batt_front-scaled.png",
+    "original": "deliverables/AE-original-references/10-breast-augmentation_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/batt_back-scaled.png",
+    "original": "deliverables/AE-original-references/10-breast-augmentation_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brlipo_front-scaled.png",
+    "original": "deliverables/AE-original-references/12-breast-reduction_liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brlipo_back-scaled.png",
+    "original": "deliverables/AE-original-references/12-breast-reduction_liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/13-breast-reduction_bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brbbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/13-breast-reduction_bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brtt_front-scaled.png",
+    "original": "deliverables/AE-original-references/14-breast-reduction_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brtt_back-scaled.png",
+    "original": "deliverables/AE-original-references/14-breast-reduction_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipott_front-scaled.png",
+    "original": "deliverables/AE-original-references/16-liposuction-360_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipott_back-scaled.png",
+    "original": "deliverables/AE-original-references/16-liposuction-360_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipo_front-scaled.png",
+    "original": "deliverables/AE-original-references/17-liposuction-360_breast-augmentation/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipo_back-scaled.png",
+    "original": "deliverables/AE-original-references/17-liposuction-360_breast-augmentation/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipobbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/20-liposuction-360_bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/lipobbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/20-liposuction-360_bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbltt_front-scaled.png",
+    "original": "deliverables/AE-original-references/22-tummy-tuck_bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bbltt_back-scaled.png",
+    "original": "deliverables/AE-original-references/22-tummy-tuck_bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_front-1-scaled.png",
+    "original": "deliverables/AE-original-references/24-breast-lift_liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bllipo_back-1-scaled.png",
+    "original": "deliverables/AE-original-references/24-breast-lift_liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blbbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/25-breast-lift_bbl/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blbbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/25-breast-lift_bbl/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bltt_front-scaled.png",
+    "original": "deliverables/AE-original-references/26-breast-lift_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/abdominoplastia__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/bltt_back-scaled.png",
+    "original": "deliverables/AE-original-references/26-breast-lift_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, abdominoplastia__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battbbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/29-bbl_breast-augmentation_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/battbbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/29-bbl_breast-augmentation_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brttlipo_front-scaled.png",
+    "original": "deliverables/AE-original-references/33-liposuction-360_breast-reduction_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/brttlipo_back-scaled.png",
+    "original": "deliverables/AE-original-references/33-liposuction-360_breast-reduction_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipott_front-scaled.png",
+    "original": "deliverables/AE-original-references/36-liposuction-360_breast-augmentation_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/balipott_back-scaled.png",
+    "original": "deliverables/AE-original-references/36-liposuction-360_breast-augmentation_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blttlipo_front-scaled.png",
+    "original": "deliverables/AE-original-references/38-liposuction-360_breast-lift_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/liposuccion__abdominoplastia__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/blttlipo_back-scaled.png",
+    "original": "deliverables/AE-original-references/38-liposuction-360_breast-lift_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, liposuccion__abdominoplastia__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__aumento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/balipobbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/40-bbl_breast-augmentation_liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__aumento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__aumento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/balipobbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/40-bbl_breast-augmentation_liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__aumento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__reduccion-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brlipobbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/41-bbl_breast-reduction_liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__reduccion-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__reduccion-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/brlipobbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/41-bbl_breast-reduction_liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__reduccion-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bllipobbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/43-bbl_breast-lift_liposuction-360/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__liposuccion__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/bllipobbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/43-bbl_breast-lift_liposuction-360/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__liposuccion__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia__levantamiento-de-pecho-front.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttbbl_front-scaled.png",
+    "original": "deliverables/AE-original-references/44-bbl_breast-lift_tummy-tuck/front.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia__levantamiento-de-pecho, front.",
+    "dimensions": [
+      1165,
+      2560
+    ]
+  },
+  {
+    "file": "combo-ae/bbl__abdominoplastia__levantamiento-de-pecho-back.webp",
+    "source": "https://aeplasticsurgerymiami.com/wp-content/uploads/2026/01/blttbbl_back-scaled.png",
+    "original": "deliverables/AE-original-references/44-bbl_breast-lift_tummy-tuck/back.png",
+    "status": "downloaded",
+    "usage": "Try your combo original combination image, bbl__abdominoplastia__levantamiento-de-pecho, back.",
+    "dimensions": [
+      1165,
+      2560
     ]
   }
 ]

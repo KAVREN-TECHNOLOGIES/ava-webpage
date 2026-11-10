@@ -1,0 +1,123 @@
+{
+  "status": "generated-six-single-variants",
+  "tool": "image_gen.imagegen",
+  "identityReference": "assets/source/ava-sunlounger.png",
+  "baselineParent": "assets/combo-photo/clothed-45-v1/base.png",
+  "requestedView": "Front three-quarter45-degree view, illustrated photograph; angle is not calibrated by photogrammetry.",
+  "variantMethod": "Each single variant was edited directly from base.png. No cumulative edits.",
+  "qaMethod": "Visual inspection of each output; unedited reference-region mean absolute RGB error on0..255 scale. Images are not assumed pixel-identical.",
+  "entries": [
+    {
+      "id": "base",
+      "file": "base.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1686487,
+      "sha256": "d36e80df8146eb7f0e801e35baa10e79eae5fe7d7a5b5909486f77108486f111",
+      "reference": "../clothed-45-v1/base.png",
+      "referenceRegionPixelMAE": {
+        "face": 0,
+        "feet": 0,
+        "background": 0
+      }
+    },
+    {
+      "id": "liposuccion",
+      "file": "liposuccion.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1651705,
+      "sha256": "6ad39a8420f243f0ba33190658d8b5442a0bee1313e12322ee542c327bf1994c",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 6.0192,
+        "feet": 4.211,
+        "background": 2.0836
+      }
+    },
+    {
+      "id": "abdominoplastia",
+      "file": "abdominoplastia.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1688294,
+      "sha256": "2e9b47e0391fa7e95381ba88b933b34333b911b9ed29e9746bc28c9bd98c251b",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 5.3691,
+        "feet": 3.3931,
+        "background": 2.5932
+      }
+    },
+    {
+      "id": "bbl",
+      "file": "bbl.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1671732,
+      "sha256": "be03baa5c4aa0108180fb95a37f7f45aa364fd96c42888b3fbae1ea2ec380158",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 5.0978,
+        "feet": 3.5122,
+        "background": 1.3615
+      }
+    },
+    {
+      "id": "aumento-de-pecho",
+      "file": "aumento-de-pecho.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1678833,
+      "sha256": "897ebc135f212a5dbdc26ea10dc31957ece3ed1699ccf8f5cbfc9617ab4ccf62",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 5.9757,
+        "feet": 3.3592,
+        "background": 1.3584
+      }
+    },
+    {
+      "id": "levantamiento-de-pecho",
+      "file": "levantamiento-de-pecho.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1716043,
+      "sha256": "bf06b4aa864d4be06d553713f46fc92a57d64ead375c4481a59cb0e9d977b15f",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 5.7742,
+        "feet": 4.9916,
+        "background": 2.1575
+      }
+    },
+    {
+      "id": "reduccion-de-pecho",
+      "file": "reduccion-de-pecho.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1689041,
+      "sha256": "2ec6bbaffbebe2d355204eb5bf11dbc0c341f3d2e7fd336ea704292ce5599801",
+      "reference": "base.png",
+      "referenceRegionPixelMAE": {
+        "face": 4.8771,
+        "feet": 2.8744,
+        "background": 1.6279
+      }
+    }
+  ]
+}

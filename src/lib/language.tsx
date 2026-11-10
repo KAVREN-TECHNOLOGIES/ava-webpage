@@ -8,8 +8,10 @@ const LanguageContext = createContext({
   t: (es: string, _en: string) => es,
 });
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("es");
+export function LanguageProvider({ children, language: controlledLanguage, onLanguageChange }: { children: ReactNode; language?: Language; onLanguageChange?: (language: Language) => void }) {
+  const [localLanguage, setLocalLanguage] = useState<Language>("es");
+  const language = controlledLanguage ?? localLanguage;
+  const setLanguage = onLanguageChange ?? setLocalLanguage;
   const t = (es: string, en: string) => (language === "es" ? es : en);
   return (
     <LanguageContext value={{ language, setLanguage, t }}>

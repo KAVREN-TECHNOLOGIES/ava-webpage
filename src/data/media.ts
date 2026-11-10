@@ -3,6 +3,7 @@
 export const media = {
   footer: "/media/ava-footer.webp",
   hero: "/media/ava-hero.webp",
+  contact: "/media/ava-sunlounger.webp",
   campaign: Array.from(
     { length: 6 },
     (_, index) => `/media/campaign-0${index + 1}.jpg`,

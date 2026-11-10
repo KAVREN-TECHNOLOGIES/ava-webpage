@@ -1,0 +1,53 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "natural",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-575db6b3-72b6-49ad-ab59-052df48c01f6.png",
+      "destination": "public/media/combo/natural.png",
+      "prompt": "Create a premium fashion magazine studio photograph for an interactive website. One square image composed of two equal vertical photographic panels, without a border or gap. Both panels show the same fictional 30-year-old adult woman wearing a completely opaque aubergine-purple athletic unitard: high crew neckline, sleeveless wide shoulders, fitted waist, full-length leggings, no cut-outs. LEFT panel is a straight-on front view, RIGHT panel a straight-on back view, identical standing pose and camera framing from just above head to the knees. Her arms hang naturally slightly away from her sides with hands open and relaxed. Adult olive/tan skin, dark brown shoulder-length hair tied in a neat low bun, calm neutral expression in front view, ordinary realistic athletic proportions, natural photographic texture. The model in the left panel is centered at 25% of image width, and the one in right panel at 75%; head top at 7% of frame, shoulders at 20%, waist at 50%, knees at 95%. Quiet warm taupe seamless studio background, warm sculptural directional light from upper left, subtle analog film grain, sophisticated fitness-fashion editorial art direction with deep violet fabric and sandy warm tones. The two panels must clearly look like the same person photographed from opposite directions in the same controlled studio shoot. Clean image only: no text, logos, watermarks, labels, inset pictures or graphical marks."
+    },
+    {
+      "id": "breast-augmentation",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-63f01d45-9204-4ba3-96e1-7673193c5e87.png",
+      "destination": "public/media/combo/breast-augmentation.png",
+      "prompt": "Edit the attached fictional adult model's fully clothed two-view studio photograph. This is a controlled fashion-fit visualization. Keep the exact square diptych composition, same person, face, hairstyle, arms, hands, pose, camera, scale, lighting, backdrop, color, fabric texture, and opaque high-neck purple full-length athletic unitard. Keep every part outside the requested upper-torso region visually unchanged. No text, marks, logos, exposed skin added or nudity. Both front and rear views must stay perfectly registered with the source. Create a subtle fuller upper-torso silhouette under the opaque garment, as an illustrative breast-augmentation selection. Modify only the garment-covered upper chest at about 27–44% image height in the front view, keeping the change anatomically plausible and modest. The rear view and all lower-torso contours remain unchanged."
+    },
+    {
+      "id": "breast-lift",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-a24e5d1d-7c11-4c18-87a9-62179a8508b0.png",
+      "destination": "public/media/combo/breast-lift.png",
+      "prompt": "Edit the attached fictional adult model's fully clothed two-view studio photograph. This is a controlled fashion-fit visualization. Keep the exact square diptych composition, same person, face, hairstyle, arms, hands, pose, camera, scale, lighting, backdrop, color, fabric texture, and opaque high-neck purple full-length athletic unitard. Keep every part outside the requested upper-torso region visually unchanged. No text, marks, logos, exposed skin added or nudity. Both front and rear views must stay perfectly registered with the source. Create a subtle lifted upper-torso silhouette under the opaque garment, as an illustrative breast-lift selection. Adjust the garment-covered front upper chest at about 27–44% image height slightly upward while retaining the same overall volume and natural proportions. The rear view and all lower-torso contours remain unchanged."
+    },
+    {
+      "id": "breast-reduction",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-67aa657b-4bfa-4fff-8bef-68dafd87c4b6.png",
+      "destination": "public/media/combo/breast-reduction.png",
+      "prompt": "Edit the attached fictional adult model's fully clothed two-view studio photograph. This is a controlled fashion-fit visualization. Keep the exact square diptych composition, same person, face, hairstyle, arms, hands, pose, camera, scale, lighting, backdrop, color, fabric texture, and opaque high-neck purple full-length athletic unitard. Keep every part outside the requested upper-torso region visually unchanged. No text, marks, logos, exposed skin added or nudity. Both front and rear views must stay perfectly registered with the source. Create a subtly smaller upper-torso silhouette under the opaque garment, as an illustrative breast-reduction selection. Reduce the garment-covered front upper-chest contour at about 27–44% image height by a modest amount, retaining realistic adult proportions. The rear view and all lower-torso contours remain unchanged."
+    },
+    {
+      "id": "liposuction",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-cbe93c58-445b-4fc3-adbc-549e7c527f7e.png",
+      "destination": "public/media/combo/liposuction.png",
+      "prompt": "Edit this fictional adult woman's fully clothed front/back studio fashion diptych. Preserve exact figure registration, crop, pose, arms, hands, face, hair, background, photographic grain, camera and lighting. Keep the opaque high-neck purple full-length athletic unitard identical. The output is an illustrative silhouette option, modest and anatomically realistic. All pixels outside the specified garment-covered area should remain visually identical. Both panels must stay perfectly aligned with the input. No text, graphics, logos, skin exposure added or nudity. Refine only the waist/side contour and garment fabric around the abdomen, approximately 43–61% image height in both views. Make the waist modestly slimmer and smooth the sides through the fitted fabric. Preserve the upper chest and lower hip silhouette exactly."
+    },
+    {
+      "id": "tummy-tuck",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-0e109a9b-7d00-40c7-8dae-0e6f231f1620.png",
+      "destination": "public/media/combo/tummy-tuck.png",
+      "prompt": "Edit this fictional adult woman's fully clothed front/back studio fashion diptych. Preserve exact figure registration, crop, pose, arms, hands, face, hair, background, photographic grain, camera and lighting. Keep the opaque high-neck purple full-length athletic unitard identical. The output is an illustrative silhouette option, modest and anatomically realistic. All pixels outside the specified garment-covered area should remain visually identical. Both panels must stay perfectly aligned with the input. No text, graphics, logos, skin exposure added or nudity. Refine only the lower abdominal contour under the opaque unitard, approximately 48–65% image height, primarily in the front view. Make the lower tummy modestly flatter and the garment smoother there without changing the width of shoulders or hips. Keep the rear view and chest unchanged."
+    },
+    {
+      "id": "waist-combo",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-7202fa61-1f87-4a5a-83f9-8fef3f61b28d.png",
+      "destination": "public/media/combo/waist-combo.png",
+      "prompt": "Edit this fictional adult woman's fully clothed front/back studio fashion diptych. Preserve exact figure registration, crop, pose, arms, hands, face, hair, background, photographic grain, camera and lighting. Keep the opaque high-neck purple full-length athletic unitard identical. The output is an illustrative silhouette option, modest and anatomically realistic. All pixels outside the specified garment-covered area should remain visually identical. Both panels must stay perfectly aligned with the input. No text, graphics, logos, skin exposure added or nudity. Refine only the waist and lower-abdominal garment silhouette, approximately 43–65% image height. Combine a modestly slimmer waist visible in both views with a flatter lower abdominal contour in the front view, keeping upper chest, shoulders and lower hip contours unchanged."
+    },
+    {
+      "id": "bbl",
+      "source": "C:\\Users\\Guest\\.codex\\generated_images\\01a1c5d0-b171-70a2-be30-6068bfdc84ff\\exec-930705a1-46b6-4d55-9c17-35a243e7fd03.png",
+      "destination": "public/media/combo/bbl.png",
+      "prompt": "Edit this fictional adult woman's fully clothed front/back studio fashion diptych. Preserve exact figure registration, crop, pose, arms, hands, face, hair, background, photographic grain, camera and lighting. Keep the opaque high-neck purple full-length athletic unitard identical. The output is an illustrative silhouette option, modest and anatomically realistic. All pixels outside the specified garment-covered area should remain visually identical. Both panels must stay perfectly aligned with the input. No text, graphics, logos, skin exposure added or nudity. Refine only the garment-covered hip/gluteal silhouette at approximately 59–80% image height in both views, as a modest BBL illustration. Give the hips a gently fuller and rounder contour under the athletic unitard, with realistic adult anatomy. Keep the waist, upper torso, hands and the lower legs unchanged."
+    }
+  ]
+}

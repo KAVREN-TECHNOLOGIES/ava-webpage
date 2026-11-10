@@ -1,0 +1,23 @@
+{
+  "bind_pose_maximum_error_m": 2.384476811558792e-07,
+  "max_vertex_influences": 4,
+  "pose_checks": {
+    "1": {
+      "min_z": 0.0,
+      "extreme_edge_fraction": 0.0
+    },
+    "31": {
+      "min_z": 0.0,
+      "extreme_edge_fraction": 0.0
+    },
+    "61": {
+      "min_z": 0.0,
+      "extreme_edge_fraction": 0.0
+    },
+    "91": {
+      "min_z": 0.0,
+      "extreme_edge_fraction": 7.5e-05
+    }
+  },
+  "morphs_and_three_region_combo": "pass"
+}

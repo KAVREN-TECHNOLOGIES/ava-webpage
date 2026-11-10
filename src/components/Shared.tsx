@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { LocalizedLink as Link } from "../lib/LocalizedRouting";
 import { media } from "../data/media";
 import { useLanguage } from "../lib/language";
 import { ConsultationForm } from "./ConsultationForm";
@@ -19,20 +20,21 @@ export function PageIntro({ title, subtitle }: { title: string; subtitle?: strin
   );
 }
 
-export function ConsultationBand({ standalone = false }: { standalone?: boolean }) {
+export function ConsultationBand({ standalone = false, id = "consulta" }: { standalone?: boolean; id?: string }) {
   const { t } = useLanguage();
+  const [review, setReview] = useState(false);
+  const titleId = id + "-heading";
+  const headline = <>{t("Tu belleza.", "Your beauty.")}{" "}<br /><em>{t("A tu manera.", "Your way.")}</em></>;
   return (
-    <section className={`consultation-band ap-consult ${standalone ? "ap-consult--standalone" : ""}`} id="consulta" aria-labelledby="consultation-heading">
-      <div className="ap-consult__intro">
-        {standalone ? <h1 id="consultation-heading">{t("Datos para la", "Consultation")} <em>{t("consulta", "details")}</em></h1> :
-          <h2 id="consultation-heading">{t("Tu consulta", "Your consultation")}</h2>}
-        <p>{t("Selecciona un procedimiento y revisa tus datos de contacto.", "Choose a procedure and review your contact details.")}</p>
-        <Link className="ap-text-link" to="/recursos/seguridad">
-          {t("Preparación para la consulta", "Consultation preparation")}<Icon name="arrow" />
-        </Link>
-        <img className="ap-consult__photo" src={media.hero} alt="" width="2048" height="1152" loading="lazy" />
+    <section className="ap-contact" id={id} aria-labelledby={titleId} data-review={review}>
+      <img className="ap-contact__background" src={media.contact} alt="" width="2048" height="1536" loading="lazy" />
+      <div className="ap-contact__content">
+        {!review && <div className="ap-contact__heading">
+          {standalone ? <h1 id={titleId}>{headline}</h1> : <h2 id={titleId}>{headline}</h2>}
+          <p>{t("Hablemos de lo que tienes en mente.", "Let's talk about what you have in mind.")}</p>
+        </div>}
+        <ConsultationForm onReviewChange={setReview} reviewHeading={standalone ? "h1" : "h2"} reviewHeadingId={titleId} />
       </div>
-      <ConsultationForm />
     </section>
   );
 }

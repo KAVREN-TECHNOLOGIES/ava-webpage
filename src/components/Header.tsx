@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { LocalizedLink as Link, LocalizedNavLink as NavLink } from "../lib/LocalizedRouting";
 import { useLanguage } from "../lib/language";
 import { Icon } from "./Icon";
+import { BrandLogo } from "./BrandLogo";
 
 export function Header({ cover = false }: { cover?: boolean }) {
   const { t, language, setLanguage } = useLanguage();
@@ -44,8 +45,9 @@ export function Header({ cover = false }: { cover?: boolean }) {
 
   const links = [
     { to: "/procedimientos", hash: "#ap-procedimientos", label: t("Procedimientos", "Procedures") },
-    { to: "/servicios", hash: "#ap-experiencia", label: t("Preparación", "Preparation") },
+    { to: "/servicios", hash: "/servicios", label: t("Preparación", "Preparation") },
     { to: "/recursos", hash: "#ap-preguntas", label: t("Preguntas", "Questions") },
+    { to: "/bmi", hash: "/bmi", label: "BMI" },
   ];
   const moreLinks = [
     { to: "/financiamiento", label: t("Costos de cirugía", "Surgery costs") },
@@ -56,11 +58,11 @@ export function Header({ cover = false }: { cover?: boolean }) {
     <>
       {!cover && <a className="skip-link" href="#contenido">{t("Saltar al contenido", "Skip to content")}</a>}
       <header className={`ap-header ${cover ? "ap-header--cover" : "ap-header--interior"}`}>
-        <Link className="ap-logo" to="/" aria-label="AVA Cosmetic Surgery · Inicio">
-          <img src="/brand/ava-lockup-ivory.svg" alt="" width="119" height="57" />
+        <Link className="ap-logo" to="/" aria-label={t("AVA Cosmetic Surgery · Inicio", "AVA Cosmetic Surgery · Home")}>
+          <BrandLogo />
         </Link>
         <nav className="ap-desktop-nav" aria-label={t("Navegación principal", "Main navigation")}>
-          {links.map(link => cover ?
+          {links.map(link => cover && link.hash.startsWith("#") ?
             <a key={link.to} href={link.hash}>{link.label}</a> :
             <NavLink key={link.to} to={link.to}>{link.label}</NavLink>
           )}

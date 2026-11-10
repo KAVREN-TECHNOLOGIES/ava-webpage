@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { usePageSearchParams as useSearchParams } from "../lib/searchParams";
+import { LocalizedLink as Link } from "../lib/LocalizedRouting";
 import { media } from "../data/media";
 import { categoryLabels, procedures } from "../data/procedures";
 import { consultationStages, patientQuestions } from "../data/patientContent";
+import { privacySections, termsSections } from "../data/legalContent";
+import { company } from "../data/company";
+import { CompanyAddress } from "../components/CompanyAddress";
 import { useLanguage, type Localized } from "../lib/language";
 import { Icon } from "../components/Icon";
 import {
@@ -78,8 +83,9 @@ export function ProceduresPage() {
   );
 }
 
-export function ProcedurePage() {
-  const { slug } = useParams();
+export function ProcedurePage({ procedureSlug }: { procedureSlug?: string } = {}) {
+  const { slug: routeSlug } = useParams();
+  const slug = procedureSlug ?? routeSlug;
   const { t, language } = useLanguage();
   const procedure = procedures.find((item) => item.slug === slug);
   if (!procedure) return <NotFoundPage />;
@@ -211,20 +217,14 @@ export function GalleryPage() {
           </div>
         ) : (
           <>
-            <p className="section-note">
-              {t(
-                "Fotografía editorial ilustrativa. Estas imágenes no muestran resultados de AVA.",
-                "Illustrative editorial photography. These images do not show AVA results.",
-              )}
-            </p>
             <div className="gallery-grid">
               {galleryPhotos.map((image, index) => (
                 <button
                   key={image}
                   onClick={() => setSelected(index)}
                   aria-label={t(
-                    `Ampliar fotografía de referencia ${index + 1}`,
-                    `Enlarge reference photograph ${index + 1}`,
+                    `Ampliar fotografía ${index + 1}`,
+                    `Enlarge photograph ${index + 1}`,
                   )}
                 >
                   <img
@@ -520,6 +520,10 @@ export function LocationPage() {
           "Information for patients traveling from another city.",
         )}
       />
+      <section className="reading-section wrap">
+        <h2>{t("Dónde estamos", "Our location")}</h2>
+        <CompanyAddress />
+      </section>
       <TravelContent />
     </>
   );
@@ -527,8 +531,9 @@ export function LocationPage() {
 export function ConsultationPage() {
   return <ConsultationBand standalone />;
 }
-export function ResourcesPage() {
-  const { topic } = useParams();
+export function ResourcesPage({ resourceTopic }: { resourceTopic?: string } = {}) {
+  const { topic: routeTopic } = useParams();
+  const topic = resourceTopic ?? routeTopic;
   const { t, language } = useLanguage();
   if (topic === "pacientes-de-fuera")
     return (
@@ -577,8 +582,8 @@ export function ResourcesPage() {
       <PageIntro
         title={t("Preguntas frecuentes", "Frequently asked questions")}
         subtitle={t(
-          "Procedimientos, recuperación y costos.",
-          "Procedures, recovery and costs.",
+          "Consulta, seguridad y recuperación.",
+          "Consultation, safety and recovery.",
         )}
       />
       <section className="faq-section wrap">
@@ -592,6 +597,10 @@ export function ResourcesPage() {
           </details>
         ))}
         <div className="resource-links">
+          <Link to="/bmi">
+            {t("Calculadora de BMI", "BMI calculator")}
+            <Icon name="arrow" />
+          </Link>
           <Link to="/recursos/pacientes-de-fuera">
             {t("Pacientes de otras ciudades", "Traveling patients")}
             <Icon name="arrow" />
@@ -615,56 +624,12 @@ export function LegalPage({
   const { t, language } = useLanguage();
   const titles = {
     privacidad: t("Política de privacidad", "Privacy policy"),
-    terminos: t("Términos de uso", "Terms of use"),
+    terminos: t("Términos de servicio", "Terms of service"),
     accesibilidad: t("Accesibilidad", "Accessibility"),
   };
   const sections: Record<typeof kind, readonly ReadingItem[]> = {
-    privacidad: [
-      {
-        title: { es: "Datos del formulario", en: "Form details" },
-        body: {
-          es: "El formulario permite escribir y revisar datos dentro de la página. No envía solicitudes ni almacena los campos en un servidor, base de datos o almacenamiento del navegador. Los datos se borran al recargar o salir de la página.",
-          en: "The form lets you enter and review details within the page. It does not send requests or store fields on a server, in a database or in browser storage. Details are cleared when you reload or leave the page.",
-        },
-      },
-      {
-        title: { es: "Información médica", en: "Medical information" },
-        body: {
-          es: "No incluyas información médica sensible ni fotografías en el formulario. La evaluación médica requiere un canal adecuado para compartir esa información.",
-          en: "Do not include sensitive medical information or photographs in the form. Medical assessment requires an appropriate channel for sharing that information.",
-        },
-      },
-      {
-        title: { es: "Servicios externos", en: "External services" },
-        body: {
-          es: "Las fuentes y fotografías se sirven con el sitio. Esta aplicación no integra analítica, publicidad, chat ni seguimiento. Los enlaces externos se rigen por las políticas del sitio de destino.",
-          en: "Fonts and photographs are served with the site. This application does not include analytics, advertising, chat or tracking. External links are governed by the destination site's policies.",
-        },
-      },
-    ],
-    terminos: [
-      {
-        title: { es: "Información del sitio", en: "Site information" },
-        body: {
-          es: "El contenido de AVA Cosmetic Surgery es informativo. No constituye un diagnóstico ni determina si una cirugía está indicada. La valoración y el consentimiento deben realizarse con un profesional cualificado.",
-          en: "AVA Cosmetic Surgery content is informational. It is not a diagnosis and does not determine surgical suitability. Assessment and consent require a qualified professional.",
-        },
-      },
-      {
-        title: { es: "Formulario y citas", en: "Form and appointments" },
-        body: {
-          es: "Revisar datos en el formulario no envía una solicitud, reserva una cita ni establece una relación médico-paciente. El sitio no procesa pagos.",
-          en: "Reviewing details in the form does not send a request, book an appointment or establish a doctor-patient relationship. The site does not process payments.",
-        },
-      },
-      {
-        title: { es: "Fotografías", en: "Photography" },
-        body: {
-          es: "AVA aportó las fotografías de portada, pie de página y los nueve procedimientos. Las demás fotografías proceden de Avana Plastic Surgery y se utilizan como referencia visual. No representan resultados de pacientes. Los derechos pertenecen a sus titulares.",
-          en: "AVA supplied the cover, footer and photographs used for all nine procedures. Other photographs come from Avana Plastic Surgery and are used as visual references. They do not represent patient results. Rights belong to their respective owners.",
-        },
-      },
-    ],
+    privacidad: privacySections,
+    terminos: termsSections,
     accesibilidad: [
       {
         title: { es: "Navegación con teclado", en: "Keyboard navigation" },
@@ -691,8 +656,15 @@ export function LegalPage({
   };
   return (
     <>
-      <PageIntro title={titles[kind]} />
+      <PageIntro title={titles[kind]} subtitle={kind === "accesibilidad" ? undefined : t("Última actualización: 10 de noviembre de 2026.", "Last updated: November 10, 2026.")} />
       <article className="legal-page wrap">
+        <section>
+          <h2>{t("Datos de la empresa", "Company information")}</h2>
+          <div>
+            <p>{company.legalName}</p>
+            <CompanyAddress />
+          </div>
+        </section>
         {sections[kind].map((item) => (
           <section key={item.title.es}>
             <h2>{item.title[language]}</h2>

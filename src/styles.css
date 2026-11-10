@@ -519,6 +519,11 @@ main:focus {
   letter-spacing: -.035em;
 }
 .ap-consult { --focus-color: var(--ivory); }
+.company-address { font-style: normal; font-size: 17px; line-height: 1.6; }
+.company-address a { display: inline-block; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.ap-consult__intro .company-address { margin-top: 24px; }
+.reading-section > .company-address { margin-top: 24px; }
+.legal-page .company-address { margin-top: 12px; font-size: 18px; }
 .ap-consult__photo { width: 200px; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: 68% 27%; border-radius: 12px; margin-top: 38px; }
 .field--third:has(#consult-procedure) { grid-column: 1/-1; }
 
@@ -591,7 +596,7 @@ main:focus {
   .ap-header.ap-header--interior { inset: auto; min-height: 88px; padding: 14px 6%; }
   .ap-header--interior .ap-header__cta { display: flex; padding: 10px 14px; font-size: 12px; gap: 10px; }
   .ap-header--interior .ap-header__cta .icon { display: none; }
-  .ap-header--interior .ap-logo { width: 96px; }
+  .ap-header--interior .ap-logo { width: 7.5rem; }
   .ap-header--interior .ap-header__actions { gap: 6px; }
   .ap-header--interior .ap-mobile-nav { left: 0; right: 0; }
   .ap-mobile-nav a { font-size: 18px; padding-block: 14px; }
@@ -624,7 +629,6 @@ main:focus {
 }
 @media (max-width: 370px) {
   .ap-header--interior .ap-header__cta { display: none; }
-  .ap-header--interior .ap-logo { width: 94px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }

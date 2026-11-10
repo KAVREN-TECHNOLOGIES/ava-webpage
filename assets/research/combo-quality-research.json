@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-10",
+  "purpose": "Research following the user's rejection of the mannequin morph and pose studies; no further asset or frontend rebuild in this research pass.",
+  "observed": {
+    "reference": {
+      "url": "https://aeplasticsurgerymiami.com/",
+      "implementation": "Explicit combo-to-image lookup; imageFront/imageBack assets, paired preloading and synchronized image crossfade.",
+      "functions": [
+        "findComboForProcedures",
+        "updateImages",
+        "fadePair"
+      ],
+      "uniqueFrontBackImageUrls": 94,
+      "baseline": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/base-front-scaled.png",
+      "augmentation": "https://aeplasticsurgerymiami.com/wp-content/uploads/2025/12/ba-only_front-scaled.png",
+      "visualReview": "Browser verified a realistic body with visible baseline breast descent/abdominal volume, identical pose across the two reviewed states, and dashed selection contours on augmentation.",
+      "unknown": "The original authoring application and production method are not verifiable from the website."
+    },
+    "suppliedGlb": {
+      "morphTargets": 0,
+      "skins": 0,
+      "animations": 0,
+      "primitiveMode": "triangles"
+    },
+    "availableSoftwareVerified": {
+      "Blender": "5.2.3"
+    },
+    "priorValidationLimit": "Finite vertex positions, normalized weights and edge-length checks did not establish anatomical quality or visual acceptance."
+  },
+  "recommendation": {
+    "status": "Proposed, not a new user approval or a completed implementation.",
+    "presentation": "Author in 3D, deliver controlled full-state images in the webpage, initially fixed front/back views.",
+    "anatomy": "Use a master body with a meaningful baseline and anatomically sculpted target shapes. Do not reuse the rejected Gaussian deformations as final anatomy.",
+    "authoring": "Manual character/anatomy sculpting, stable topology for morphs, pose-specific corrective shapes if additional poses are retained.",
+    "production": "Lock pose, camera, lighting, materials and crop. Review silhouettes before surface detail. Render complete states rather than blend horizontal photographic bands.",
+    "optionalTools": [
+      {
+        "name": "Character Creator 5",
+        "role": "Candidate production human base, body morphs, Blender/ZBrush sculpt round-trip; still requires sculpted procedure-specific targets.",
+        "source": "https://www.reallusion.com/character-creator/modeling-morph.html"
+      },
+      {
+        "name": "Daz Genesis 9",
+        "role": "Alternative render-oriented human base; official Blender bridge exists. Compatibility with local Blender5.2 not validated.",
+        "source": "https://www.daz3d.com/genesis-9-starter-essentials"
+      },
+      {
+        "name": "Auto-Rig Pro",
+        "role": "Rigging/corrective-driver workflow if poses remain in scope; not a substitute for sculpting the target shape.",
+        "source": "https://www.lucky3d.fr/auto-rig-pro/doc/auto_rig.html#corrective-shape-keys"
+      }
+    ],
+    "scopeCalculation": {
+      "rule": "Three body options; zero or one of three breast options; maximum three selections",
+      "statesIncludingBase": 29,
+      "frontBackImages": 58,
+      "withThirdView": 87
+    },
+    "firstQualitySample": "One finished master plus augmentation/reduction/lift in fixed front/profile views, before expanding to all combinations.",
+    "acceptance": "The viewer can distinguish each target quickly at actual mobile size; believable shoulder/waist/breast/hip surfaces; consistent crop and lighting; distinguish breast elevation from volume change; inspect combined states visually."
+  },
+  "sources": [
+    "https://aeplasticsurgerymiami.com/",
+    "https://www.reallusion.com/character-creator/modeling-morph.html",
+    "https://manual.reallusion.com/Character-Creator-4/Content/ENU/4.0/17_Export/Exporting_Obj_Avatars.htm",
+    "https://www.lucky3d.fr/auto-rig-pro/doc/auto_rig.html",
+    "https://github.com/daz3d/DazToBlender",
+    "https://www.daz3d.com/genesis-9-starter-essentials"
+  ]
+}
