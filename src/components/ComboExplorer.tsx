@@ -5,8 +5,8 @@ import { useLanguage } from "../lib/language";
 import { Icon } from "./Icon";
 import "./combo.css";
 
-function CameraImage({ src }: { src: string }) {
-  return <img className="ap-combo__image" src={src} alt="" width="1165" height="2560" draggable="false" />;
+function CameraImage({ src, clipPath }: { src: string; clipPath?: string }) {
+  return <img className="ap-combo__image" src={src} alt="" width="1165" height="2560" draggable="false" style={clipPath ? { clipPath } : undefined} />;
 }
 
 export function ComboExplorer() {
@@ -87,7 +87,7 @@ export function ComboExplorer() {
         <div className="ap-combo__body" role="img" aria-busy={!ready && !failed}
           aria-label={`${viewName}: ${names || t("cuerpo base", "base body")}`}>
           {active && ready && <>
-            <CameraImage src={loaded} />
+            <CameraImage src={loaded} clipPath={comparing ? `inset(0 0 0 ${split}%)` : undefined} />
             {comparing && <div className="ap-combo__base" style={{ clipPath: `inset(0 ${100 - split}% 0 0)` }}>
               <CameraImage src={comboImage([], view)} />
             </div>}

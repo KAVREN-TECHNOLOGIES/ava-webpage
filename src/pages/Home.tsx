@@ -39,29 +39,17 @@ export function Home() {
         <div className="ap-cover__story">
           <p>
             {t(
-              "BBL, liposucción, abdominoplastia y cirugía de pecho en Miami.",
-              "BBL, liposuction, tummy tuck and breast surgery in Miami.",
+              "Procedimientos de cuerpo, pecho y rostro en Miami.",
+              "Body, breast and facial procedures in Miami.",
             )}
           </p>
           <a className="ap-button ap-button--light" href="#ap-procedimientos">
             {t("Ver procedimientos", "View procedures")}
-            <span>
+            <span aria-hidden="true">
               <Icon name="arrow" />
             </span>
           </a>
         </div>
-        <a href="#ap-consulta" className="ap-cover-card">
-          <div className="ap-cover-card__photo">
-            <img src={media.hero} alt="" width="2048" height="1152" />
-          </div>
-          <div className="ap-cover-card__copy">
-            <strong>{t("Consulta", "Consultation")}</strong>
-            <span className="ap-cover-card__action">
-              {t("Preparar consulta", "Prepare consultation")}
-              <Icon name="arrow" />
-            </span>
-          </div>
-        </a>
         <div className="ap-cover__rail">
           <span>AVA COSMETIC SURGERY</span>
           <span>{t("CUERPO, PECHO Y ROSTRO", "BODY, BREAST & FACE")}</span>

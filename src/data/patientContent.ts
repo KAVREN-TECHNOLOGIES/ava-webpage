@@ -4,12 +4,12 @@ export type Answer = Readonly<{ question: Localized; answer: Localized }>;
 export const patientQuestions: readonly Answer[] = [
   {
     question: {
-      es: "¿Qué distingue a AVA Cosmetic Surgery?",
-      en: "What sets AVA Cosmetic Surgery apart?",
+      es: "¿Cómo preparo mi consulta?",
+      en: "How should I prepare for my consultation?",
     },
     answer: {
-      es: "En AVA, la consulta parte de tus objetivos, tu historial médico y las zonas que deseas tratar. El plan debe explicar las opciones, los riesgos y la recuperación para que puedas tomar una decisión informada.",
-      en: "At AVA, your consultation starts with your goals, medical history and areas of concern. The plan should explain your options, risks and recovery so you can make an informed decision.",
+      es: "Ten a mano tu historial médico, las cirugías previas y la lista de medicamentos y suplementos que tomas. Anota qué zonas quieres tratar y las preguntas que quieras resolver.",
+      en: "Have your medical history, previous surgeries and a list of medications and supplements ready. Note the areas you want to address and the questions you want to ask.",
     },
   },
   {
@@ -44,22 +44,22 @@ export const patientQuestions: readonly Answer[] = [
   },
   {
     question: {
-      es: "¿Necesito una consulta antes de operarme?",
-      en: "Is a consultation needed before surgery?",
+      es: "¿Puedo combinar varios procedimientos?",
+      en: "Can I combine procedures?",
     },
     answer: {
-      es: "Sí. La consulta permite valorar tu salud, revisar tus antecedentes y medicación, definir tus objetivos y resolver dudas sobre las opciones, los riesgos y la recuperación.",
-      en: "Yes. The consultation allows your health, medical history and medications to be reviewed, your goals to be discussed and your questions about options, risks and recovery to be answered.",
+      es: "Algunas intervenciones pueden combinarse. El cirujano debe valorar tu salud, la duración de la operación y los cuidados posteriores para decidir si conviene realizarlas juntas o en etapas.",
+      en: "Some procedures can be combined. Your surgeon must assess your health, the length of the operation and aftercare needs to decide whether to combine them or plan separate stages.",
     },
   },
   {
     question: {
-      es: "¿Tendré que guardar reposo después del procedimiento?",
-      en: "What recovery time should I plan for?",
+      es: "¿Cuándo puedo volver al trabajo o hacer ejercicio?",
+      en: "When can I return to work or exercise?",
     },
     answer: {
-      es: "Sí, debes planificar un período de recuperación. El tiempo para volver al trabajo, hacer ejercicio o viajar depende de la intervención y de tu evolución. El cirujano te indicará cuándo retomar cada actividad.",
-      en: "Plan for a recovery period. Returning to work, exercise or travel depends on the procedure and your progress. Your surgeon will advise when you can resume each activity.",
+      es: "Depende de la intervención, del esfuerzo que requiere tu trabajo y de cómo evolucione la recuperación. Organiza la ayuda que necesitarás en casa y sigue los plazos que indique el cirujano para cada actividad.",
+      en: "It depends on the procedure, the physical demands of your job and how your recovery progresses. Arrange help at home and follow your surgeon's guidance for each activity.",
     },
   },
 ];

@@ -1,0 +1,181 @@
+/* Motion follows the existing editorial layout. No JavaScript drives visuals. */
+:root {
+  --motion-fast: 180ms;
+  --motion-panel: 280ms;
+  --motion-arrive: 640ms;
+}
+
+.button,
+.directory-nav a,
+.filter-buttons button,
+.ap-combo__compare,
+.ap-combo__views button,
+.ap-carousel-categories button {
+  transition: background-color var(--motion-fast), color var(--motion-fast),
+    border-color var(--motion-fast);
+}
+
+.button > .icon,
+.ap-header__cta > .icon,
+.contact-submit .icon,
+.ap-back-top .icon {
+  transition: transform var(--motion-panel) var(--ease);
+}
+
+.button:is(:hover, :focus-visible) > .icon,
+.ap-header__cta:is(:hover, :focus-visible) > .icon,
+.contact-submit:is(:hover, :focus-visible) .icon {
+  transform: translateX(3px);
+}
+
+.ap-back-top:is(:hover, :focus-visible) .icon {
+  transform: rotate(-90deg) translateX(3px);
+}
+
+.ap-procedure-card__image img,
+.gallery-grid img {
+  transition: transform 520ms var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ap-procedure-card a:hover .ap-procedure-card__image img,
+  .gallery-grid button:hover img {
+    transform: scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* The cover's two typographic voices open as a single, bounded sequence. */
+  .ap-cover__headline h1 > span {
+    animation: ava-cover-type 760ms var(--ease) both;
+  }
+  .ap-cover__headline h1 > span + span {
+    animation-delay: 100ms;
+  }
+  .ap-cover__story {
+    animation: ava-copy-arrive 600ms var(--ease) 180ms both;
+  }
+  .page-intro h1,
+  .page-intro > p {
+    animation: ava-copy-arrive var(--motion-arrive) var(--ease) both;
+  }
+  .page-intro > p {
+    animation-delay: 60ms;
+  }
+
+  /* Keep snap targets stationary while new filter results fade in. */
+  .ap-procedure-card {
+    animation: ava-card-arrive 420ms var(--ease) both;
+  }
+  .ap-procedure-card:nth-child(2) { animation-delay: 40ms; }
+  .ap-procedure-card:nth-child(3) { animation-delay: 80ms; }
+  .ap-procedure-card:nth-child(n + 4) { animation-delay: 120ms; }
+  .ap-mobile-nav {
+    transform-origin: top right;
+    animation: ava-panel-open 240ms var(--ease) both;
+  }
+  .image-dialog[open] {
+    animation: ava-panel-open 240ms var(--ease) both;
+  }
+  .image-dialog[open]::backdrop {
+    animation: ava-opacity-in var(--motion-panel) ease-out both;
+  }
+  .image-dialog[open] > img,
+  .form-review,
+  .contact-context,
+  .field-error,
+  .bmi-result,
+  :is(.ap-faq, .faq-section) details[open] > p {
+    animation: ava-copy-arrive var(--motion-panel) var(--ease) both;
+  }
+
+  @supports (animation-timeline: view()) {
+    /* Each clipped frame owns its timeline. Only its photograph moves. */
+    :is(.ap-cover, .ap-procedure-card__image, .directory-image, .detail-image,
+      .gallery-grid button, .ap-contact, .ap-footer, .ap-combo__scene) {
+      view-timeline-name: --ava-photograph;
+      view-timeline-axis: block;
+    }
+
+    :is(.ap-cover__photo, .ap-procedure-card__image img, .directory-image img,
+      .detail-image > img, .gallery-grid img, .ap-contact__background,
+      .ap-footer__photo, .ap-combo__body) {
+      --ava-image-shift: 1.2%;
+      scale: 1.035;
+      animation: ava-photograph-drift 1ms linear both;
+      animation-timeline: --ava-photograph;
+      animation-range: cover 0% cover 100%;
+    }
+
+    /* Keep both comparison layers and their horizontal masks registered. */
+    .ap-combo__scene .ap-combo__body {
+      --ava-image-shift: 6px;
+      inset-block: 8px;
+      scale: none;
+    }
+
+    :is(.ap-carousel-heading, .ap-combo__heading, .ap-faq > h2,
+      .ap-contact__heading, .directory section > h2, .reading-section > h2) {
+      animation: ava-heading-focus 1ms linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+
+    @media (max-width: 760px) {
+      :is(.ap-cover__photo, .ap-procedure-card__image img, .directory-image img,
+        .detail-image > img, .gallery-grid img, .ap-contact__background,
+        .ap-footer__photo) {
+        --ava-image-shift: .65%;
+        scale: 1.02;
+      }
+      .ap-combo__scene .ap-combo__body {
+        --ava-image-shift: 3px;
+        inset-block: 5px;
+      }
+    }
+  }
+}
+
+@keyframes ava-cover-type {
+  from { clip-path: inset(-20% -10% 100% -5%); translate: 0 16px; }
+  to { clip-path: inset(-20% -10% -30% -5%); translate: 0 0; }
+}
+@keyframes ava-copy-arrive {
+  from { opacity: .4; translate: 0 8px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes ava-card-arrive {
+  from { opacity: .6; }
+  to { opacity: 1; }
+}
+@keyframes ava-panel-open {
+  from { opacity: 0; translate: 0 -6px; clip-path: inset(0 0 8% 0 round 16px); }
+  to { opacity: 1; translate: 0 0; clip-path: inset(0 round 16px); }
+}
+@keyframes ava-opacity-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes ava-photograph-drift {
+  from { translate: 0 calc(-1 * var(--ava-image-shift)); }
+  to { translate: 0 var(--ava-image-shift); }
+}
+@keyframes ava-heading-focus {
+  from { opacity: .7; translate: 0 10px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Spatial motion is opt-in. Older browsers keep the same visible layout. */
+@media (prefers-reduced-motion: reduce) {
+  .ap-back-top:is(:hover, :focus-visible) .icon {
+    transform: rotate(-90deg);
+  }
+  .button > .icon,
+  .ap-header__cta > .icon,
+  .contact-submit .icon,
+  .ap-procedure-card__image img,
+  .directory-image img,
+  .gallery-grid img {
+    transform: none !important;
+  }
+}

@@ -24,14 +24,14 @@ export function ConsultationBand({ standalone = false, id = "consulta" }: { stan
   const { t } = useLanguage();
   const [review, setReview] = useState(false);
   const titleId = id + "-heading";
-  const headline = <>{t("Tu belleza.", "Your beauty.")}{" "}<br /><em>{t("A tu manera.", "Your way.")}</em></>;
+  const headline = <>{t("Hablemos de", "Let's talk about")}{" "}<br /><em>{t("tu cirugía.", "your surgery.")}</em></>;
   return (
     <section className="ap-contact" id={id} aria-labelledby={titleId} data-review={review}>
       <img className="ap-contact__background" src={media.contact} alt="" width="2048" height="1536" loading="lazy" />
       <div className="ap-contact__content">
         {!review && <div className="ap-contact__heading">
           {standalone ? <h1 id={titleId}>{headline}</h1> : <h2 id={titleId}>{headline}</h2>}
-          <p>{t("Hablemos de lo que tienes en mente.", "Let's talk about what you have in mind.")}</p>
+          <p>{t("Completa tus datos de contacto.", "Enter your contact details.")}</p>
         </div>}
         <ConsultationForm onReviewChange={setReview} reviewHeading={standalone ? "h1" : "h2"} reviewHeadingId={titleId} />
       </div>
@@ -41,5 +41,5 @@ export function ConsultationBand({ standalone = false, id = "consulta" }: { stan
 
 export function ConsultationLink() {
   const { t } = useLanguage();
-  return <Link className="button" to="/consulta">{t("Datos para la consulta", "Consultation details")}<Icon name="arrow" /></Link>;
+  return <Link className="button" to="/consulta">{t("Preparar mi consulta", "Prepare my consultation")}<Icon name="arrow" /></Link>;
 }

@@ -1,5 +1,9 @@
 # Patient FAQ
 
+## Current copy — November 11, 2026
+
+The user's subsequent duplicate-copy review supersedes the historical topic wording below. The current six topics are preparing for consultation, choosing a procedure, safety, result timing, combining procedures and returning to work or exercise. Generic differentiation and the overlapping pre-surgery consultation question were removed. The shared data still serves both Home and resources in Spanish and English, including the resources page's structured FAQ. Preparation guidance was checked against [ASPS consultation guidance](https://www.plasticsurgery.org/cosmetic-procedures/mommy-makeover/consultation). Native accordions and their styles are unchanged.
+
 ## Scope and sources
 
 Completed content extension of the existing AVA FAQ, dated November 10, 2026. The user's A&E reference supplies six topics in order: clinic distinction, procedure choice, surgical safety, result timing, consultation before surgery and recovery time. `src/data/patientContent.ts` holds the Spanish and English questions with original concise answers adapted to AVA's existing consultation content. The source clinic's doctors, credentials, satisfaction statistics and outcome guarantees are not AVA facts and were not transferred.

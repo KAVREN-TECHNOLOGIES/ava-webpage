@@ -173,6 +173,33 @@ describe("Try your combo", () => {
     expect(screen.getByRole("button", { name: "Espalda" })).toHaveAttribute("aria-pressed", "true");
   });
 
+  it.each([
+    { camera: "Frente", suffix: "front" },
+    { camera: "Espalda", suffix: "back" },
+  ])("keeps transparent base and combo images on separate sides in $camera", async ({ camera, suffix }) => {
+    setup();
+    const user = userEvent.setup();
+    await user.click(screen.getByRole("button", { name: "Brazilian Butt Lift" }));
+    await user.click(screen.getByRole("button", { name: camera }));
+    await waitFor(() => expect(screen.getByRole("button", { name: "Comparar" })).toBeEnabled());
+    await user.click(screen.getByRole("button", { name: "Comparar" }));
+
+    const [combo, base] = Array.from(screen.getByRole("img").querySelectorAll("img"));
+    expect(combo).toHaveAttribute("src", `/media/combo-ae/bbl-${suffix}.webp`);
+    expect(base).toHaveAttribute("src", `/media/combo-ae/base-${suffix}.webp`);
+    const slider = screen.getByRole("slider", { name: "Comparar base y combo" });
+    for (const position of [50, 5, 95, 72]) {
+      fireEvent.change(slider, { target: { value: String(position) } });
+      expect(combo).toHaveStyle({ clipPath: `inset(0 0 0 ${position}%)` });
+      expect(base.parentElement).toHaveStyle({ clipPath: `inset(0 ${100 - position}% 0 0)` });
+    }
+
+    await user.click(screen.getByRole("button", { name: "Comparar" }));
+    expect(screen.queryByRole("slider")).not.toBeInTheDocument();
+    expect(shownImage()?.style.clipPath).toBe("");
+    expect(screen.getByRole("img").querySelectorAll("img")).toHaveLength(1);
+  });
+
   it("ignores unknown and duplicate procedures in a shared consultation link", () => {
     setup("/consulta?combo=unknown,bbl,bbl,liposuccion,abdominoplastia,aumento-de-pecho");
     expect(screen.getByLabelText("Combo seleccionado")).toHaveTextContent("Brazilian Butt Lift + Liposucción + Abdominoplastia");

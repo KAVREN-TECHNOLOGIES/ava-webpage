@@ -1,23 +1,38 @@
-import { useEffect } from "react";
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate, useNavigationType } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { RoutedLanguageProvider } from "./lib/LocalizedRouting";
 import { siteRoutes, normalizePath, resolveRoute, type SiteRoute } from "./data/routes";
 import { SeoMetadata } from "./components/SeoMetadata";
+import { createSmoothScroll } from "./lib/smoothScroll";
 import { Home } from "./pages/Home";
 import { BmiPage } from "./pages/BmiPage";
 import { ConsultationPage, ExperiencePage, FinancePage, GalleryPage, LegalPage, LocationPage, NotFoundPage, ProcedurePage, ProceduresPage, ResourcesPage, ServicesPage, TeamPage } from "./pages/Pages";
 
 function RouteEffects() {
-  const { pathname, hash } = useLocation();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const type = useNavigationType();
+  const routing = useRef({ location, navigate });
+  const scroll = useRef<ReturnType<typeof createSmoothScroll> | null>(null);
+  routing.current = { location, navigate };
+
   useEffect(() => {
-    if (hash) {
-      requestAnimationFrame(() => document.getElementById(hash.slice(1))?.scrollIntoView());
-    } else {
-      window.scrollTo({ top: 0, behavior: "instant" });
-    }
-  }, [pathname, hash]);
+    const controller = createSmoothScroll(hash => {
+      const { location: current, navigate: routeTo } = routing.current;
+      routeTo({ pathname: current.pathname, search: current.search, hash });
+    });
+    scroll.current = controller;
+    return () => {
+      controller.destroy();
+      scroll.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    scroll.current?.navigate({ key: location.key, pathname: location.pathname, hash: location.hash, type });
+  }, [location.key, location.pathname, location.hash, type]);
   return null;
 }
 

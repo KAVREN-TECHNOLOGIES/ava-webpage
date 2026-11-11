@@ -18,7 +18,7 @@ function page(content: ReactNode, path = "/") {
 describe("Contenido público de AVA", () => {
   it("abre la consulta directamente sin repetir su introducción", () => {
     page(<ConsultationPage />);
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tu belleza. A tu manera.");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Hablemos de tu cirugía.");
     expect(screen.queryByRole("heading", { name: "Tu consulta" })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Continuar" })).toBeInTheDocument();
   });
@@ -33,9 +33,9 @@ describe("Contenido público de AVA", () => {
     await user.click(screen.getByRole("button", { name: "Continuar" }));
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Revisión de datos");
-    expect(screen.queryByText("Hablemos de lo que tienes en mente.")).not.toBeInTheDocument();
+    expect(screen.queryByText("Completa tus datos de contacto.")).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Corregir mis datos" }));
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tu belleza. A tu manera.");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Hablemos de tu cirugía.");
     expect(screen.getByLabelText("Nombre")).toHaveValue("Ana");
   });
   it("presenta los procedimientos sin lemas de relleno ni perfiles sin confirmar", () => {

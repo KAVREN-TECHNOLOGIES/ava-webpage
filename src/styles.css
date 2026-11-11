@@ -53,9 +53,18 @@ select,
 textarea {
   -webkit-tap-highlight-color: transparent;
 }
+a[href],
 button,
 summary {
   cursor: pointer;
+}
+/* Decorative children keep the control's cursor and never become hover targets. */
+:where(a[href], button, summary) > * {
+  cursor: inherit;
+}
+:where(a[href], button, summary) svg,
+:where(a[href], button, summary) [aria-hidden="true"] {
+  pointer-events: none;
 }
 button {
   color: inherit;

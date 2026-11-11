@@ -37,13 +37,7 @@ export function ProceduresPage() {
   const { t, language } = useLanguage();
   return (
     <>
-      <PageIntro
-        title={t("Procedimientos", "Procedures")}
-        subtitle={t(
-          "Cirugía de cuerpo, pecho y rostro.",
-          "Body, breast and facial surgery.",
-        )}
-      />
+      <PageIntro title={t("Procedimientos", "Procedures")} />
       <div className="wrap directory">
         <nav className="directory-nav" aria-label={t("Categorías de procedimientos", "Procedure categories")}>
           {(["body", "breast", "face"] as const).map(category => <a key={category} href={`#${category}`}>{categoryLabels[category][language]}</a>)}
@@ -92,10 +86,7 @@ export function ProcedurePage({ procedureSlug }: { procedureSlug?: string } = {}
   const [introduction, ...details] = procedure.details;
   return (
     <>
-      <PageIntro
-        title={procedure.name[language]}
-        subtitle={procedure.description[language]}
-      />
+      <PageIntro title={procedure.name[language]} />
       <section className="detail-intro wrap">
         <div className="detail-image">
           <img
@@ -110,26 +101,12 @@ export function ProcedurePage({ procedureSlug }: { procedureSlug?: string } = {}
         <div>
           <h2>{introduction.title[language]}</h2>
           <p>{introduction.body[language]}</p>
-          <ul className="check-list">
-            {procedure.points.map((point) => (
-              <li key={point.es}>
-                <Icon name="check" />
-                {point[language]}
-              </li>
-            ))}
-          </ul>
           <ConsultationLink />
         </div>
       </section>
       <section className="reading-section wrap">
-        <h2>{t("Evaluación y planificación", "Assessment and planning")}</h2>
+        <h2>{t("Beneficios y tratamiento", "Benefits and treatment")}</h2>
         <ReadingGrid items={details} />
-        <p className="section-note">
-          {t(
-            "La indicación, la técnica y los tiempos de recuperación requieren una evaluación médica individual.",
-            "Suitability, technique and recovery timing require an individual medical assessment.",
-          )}
-        </p>
         <p className="source-link">
           <a href={procedure.source} target="_blank" rel="noopener noreferrer">
             American Society of Plastic Surgeons

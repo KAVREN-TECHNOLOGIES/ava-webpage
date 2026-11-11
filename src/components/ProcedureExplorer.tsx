@@ -114,16 +114,16 @@ export function ProcedureExplorer() {
 
   const descriptions: Record<Category, string> = {
     body: t(
-      "Cirugías para modificar el volumen, retirar grasa localizada y tratar el exceso de piel.",
-      "Surgery to change volume, remove localized fat and address excess skin.",
+      "Grasa localizada, piel sobrante y volumen: cada cirugía trata un cambio distinto.",
+      "Localized fat, excess skin and volume: each procedure addresses a different concern.",
     ),
     breast: t(
-      "Aumento, elevación y reducción de pecho: tres procedimientos con objetivos distintos.",
-      "Breast augmentation, lift and reduction: three procedures with different goals.",
+      "El tamaño, la posición y el peso del pecho se valoran por separado.",
+      "Breast size, position and weight are assessed separately.",
     ),
     face: t(
-      "Cirugía de nariz y lifting facial: cambios en la forma, la piel y los tejidos del rostro.",
-      "Rhinoplasty and facelift: changes to facial shape, skin and underlying tissues.",
+      "Opciones para la forma de la nariz y la flacidez del rostro y el cuello.",
+      "Options for nasal shape and sagging in the face and neck.",
     ),
   };
 
@@ -200,6 +200,7 @@ export function ProcedureExplorer() {
       <div
         ref={track}
         className="ap-carousel-track"
+        data-lenis-prevent-horizontal
         id="ap-procedure-list"
         role="group"
         aria-roledescription={t("carrusel", "carousel")}
