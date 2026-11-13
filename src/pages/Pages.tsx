@@ -149,12 +149,20 @@ export function GalleryPage() {
           role="group"
           aria-label={t("Contenido de la galería", "Gallery content")}
         >
-          <button aria-pressed={!clinical} onClick={() => setSearchParams({})}>
+          <button aria-pressed={!clinical} onClick={() => setSearchParams(current => {
+            const next = new URLSearchParams(current);
+            next.delete("tipo");
+            return next;
+          })}>
             {t("Fotografías editoriales", "Editorial photographs")}
           </button>
           <button
             aria-pressed={clinical}
-            onClick={() => setSearchParams({ tipo: "clinica" })}
+            onClick={() => setSearchParams(current => {
+              const next = new URLSearchParams(current);
+              next.set("tipo", "clinica");
+              return next;
+            })}
           >
             {t("Cómo evaluar resultados", "Evaluating results")}
           </button>
@@ -633,7 +641,7 @@ export function LegalPage({
   };
   return (
     <>
-      <PageIntro title={titles[kind]} subtitle={kind === "accesibilidad" ? undefined : t("Última actualización: 10 de noviembre de 2026.", "Last updated: November 10, 2026.")} />
+      <PageIntro title={titles[kind]} subtitle={kind === "accesibilidad" ? undefined : kind === "privacidad" ? t("Última actualización: 13 de noviembre de 2026.", "Last updated: November 13, 2026.") : t("Última actualización: 10 de noviembre de 2026.", "Last updated: November 10, 2026.")} />
       <article className="legal-page wrap">
         <section>
           <h2>{t("Datos de la empresa", "Company information")}</h2>

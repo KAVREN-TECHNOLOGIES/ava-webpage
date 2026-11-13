@@ -42,15 +42,6 @@
 .contact-context { grid-column: 1/-1; padding-block: 14px; border-top: 1px solid rgba(245,241,234,.55); border-bottom: 1px solid rgba(245,241,234,.55); }
 .contact-context > span { font-size: 12px; color: var(--ivory); }
 .contact-context > p { margin-top: 5px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
-.ap-contact[data-review="true"] { min-height: 520px; }
-.ap-contact[data-review="true"] .ap-contact__content { max-width: 700px; }
-.consultation-form.form-review { display: block; padding: 0; }
-.consultation-form.form-review :is(h1,h2,h3) { font-family: var(--font-editorial); font-size: clamp(36px,4.5vw,52px); font-weight: 400; line-height: 1.1; letter-spacing: -.02em; text-transform: none; margin: 0 0 28px; }
-.consultation-form.form-review dl { margin: 0 0 28px; }
-.consultation-form.form-review dl > div { grid-template-columns: minmax(70px,.7fr) minmax(0,1.3fr); gap: 16px; border-color: rgba(245,241,234,.4); }
-.consultation-form.form-review dt { color: var(--ivory); font-size: 13px; }
-.consultation-form.form-review dd { font-size: 16px; line-height: 1.5; }
-.consultation-form.form-review .contact-context { margin-bottom: 28px; }
 @media (max-width: 1000px) {
   .ap-contact { min-height: 760px; padding: 60px 36px; }
   .ap-contact__content { width: 50%; }
@@ -68,7 +59,6 @@
   .consultation-form { grid-template-columns: minmax(0,1fr); row-gap: 22px; }
   .consultation-form .form-grid { gap: 20px 14px; }
   .consultation-form .field--contact { grid-column: 1/-1; }
-  .ap-contact[data-review="true"] { min-height: 0; padding-block: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .contact-submit, .consultation-form .field input { transition: none; }

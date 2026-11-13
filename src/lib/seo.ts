@@ -61,7 +61,7 @@ export function pageMetadata(pathname: string) {
     }
     graph.push(page);
   }
-  return { title, description, canonical, alternates, language, image, imageAlt, graph, found: !!route };
+  return { title, description, canonical, alternates, language, image, imageAlt, graph, found: !!route, indexable: !!route && !route.noindex };
 }
 
 export function headElements(pathname: string): HeadElement[] {
@@ -71,7 +71,7 @@ export function headElements(pathname: string): HeadElement[] {
   const property = (property: string, content: string) => elements.push({ tag: "meta", attributes: { property, content } });
   elements.push({ tag: "title", attributes: {}, content: meta.title });
   named("description", meta.description);
-  named("robots", meta.found ? "index, follow, max-image-preview:large" : "noindex, follow");
+  named("robots", meta.indexable ? "index, follow, max-image-preview:large" : "noindex, follow");
   if (meta.canonical && meta.alternates) {
     elements.push({ tag: "link", attributes: { rel: "canonical", href: meta.canonical } });
     for (const [hreflang, href] of Object.entries({ ...meta.alternates, "x-default": meta.alternates.es })) {

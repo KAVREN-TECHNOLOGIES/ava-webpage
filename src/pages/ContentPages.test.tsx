@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 import { LanguageProvider } from "../lib/language";
 import { Home } from "./Home";
 import { ConsultationPage, ProcedurePage, TeamPage } from "./Pages";
+import { ThankYouPage } from "./ThankYouPage";
 
 function page(content: ReactNode, path = "/") {
   return render(
@@ -22,8 +23,11 @@ describe("Contenido público de AVA", () => {
     expect(screen.queryByRole("heading", { name: "Tu consulta" })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Continuar" })).toBeInTheDocument();
   });
-  it("mantiene un único título visible al revisar los datos", async () => {
-    page(<ConsultationPage />);
+  it("abre la página de agradecimiento después de enviar el formulario", async () => {
+    page(<Routes>
+      <Route path="/consulta" element={<ConsultationPage />} />
+      <Route path="/gracias" element={<ThankYouPage />} />
+    </Routes>, "/consulta");
     const user = userEvent.setup();
     await user.type(screen.getByLabelText("Nombre"), "Ana");
     await user.type(screen.getByLabelText("Apellidos"), "Pérez");
@@ -32,11 +36,9 @@ describe("Contenido público de AVA", () => {
     await user.click(screen.getByLabelText(/He leído la política de privacidad/));
     await user.click(screen.getByRole("button", { name: "Continuar" }));
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Revisión de datos");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Gracias por contactarnos.");
     expect(screen.queryByText("Completa tus datos de contacto.")).not.toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: "Corregir mis datos" }));
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Hablemos de tu cirugía.");
-    expect(screen.getByLabelText("Nombre")).toHaveValue("Ana");
+    expect(document.querySelector("form")).toBeNull();
   });
   it("presenta los procedimientos sin lemas de relleno ni perfiles sin confirmar", () => {
     page(<Home />);

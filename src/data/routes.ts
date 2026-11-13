@@ -1,7 +1,7 @@
 import type { Language, Localized } from "../lib/language";
 import { procedures } from "./procedures";
 
-export type PageKind = "home" | "procedures" | "procedure" | "gallery" | "team" | "experience" | "services" | "finance" | "location" | "contact" | "resources" | "bmi" | "privacy" | "terms" | "accessibility";
+export type PageKind = "home" | "procedures" | "procedure" | "gallery" | "team" | "experience" | "services" | "finance" | "location" | "contact" | "thank-you" | "resources" | "bmi" | "privacy" | "terms" | "accessibility";
 export type SiteRoute = Readonly<{
   id: string;
   kind: PageKind;
@@ -10,9 +10,11 @@ export type SiteRoute = Readonly<{
   description: Localized;
   procedureSlug?: string;
   topic?: string;
+  noindex?: boolean;
 }>;
 
 export const siteRoutes: readonly SiteRoute[] = [
+  { id: "thank-you", kind: "thank-you", noindex: true, paths: { es: "/gracias", en: "/en/thank-you" }, title: { es: "Gracias por contactar con AVA", en: "Thank you for contacting AVA" }, description: { es: "Gracias por tu interés en AVA Cosmetic Surgery. Conoce qué información preparar y qué preguntas hacer antes de tu primera consulta de cirugía estética.", en: "Thank you for your interest in AVA Cosmetic Surgery. Find out what information to prepare and which questions to ask before your first cosmetic surgery consultation." } },
   { id: "home", kind: "home", paths: { es: "/", en: "/en" }, title: { es: "Cirugía estética en Miami", en: "Cosmetic surgery in Miami" }, description: { es: "Conoce los procedimientos de cuerpo, pecho y rostro de AVA Cosmetic Surgery en Miami. Explora tus opciones y prepara una consulta personalizada.", en: "Explore body, breast and facial procedures at AVA Cosmetic Surgery in Miami. Learn about your options and prepare for a personalized consultation." } },
   { id: "procedures", kind: "procedures", paths: { es: "/procedimientos", en: "/en/procedures" }, title: { es: "Procedimientos de cirugía estética en Miami", en: "Cosmetic surgery procedures in Miami" }, description: { es: "Explora BBL, liposucción, abdominoplastia, cirugía de pecho y procedimientos faciales en AVA Miami. Conoce en qué consiste cada intervención.", en: "Explore BBL, liposuction, tummy tuck, breast surgery and facial procedures at AVA Miami. Learn what each procedure involves and discuss your options." } },
   { id: "gallery", kind: "gallery", paths: { es: "/resultados", en: "/en/photography" }, title: { es: "Fotografía editorial", en: "Editorial photography" }, description: { es: "Explora la fotografía editorial de AVA Cosmetic Surgery y consulta qué aspectos revisar al comparar imágenes de resultados de cirugía estética.", en: "Explore AVA Cosmetic Surgery's editorial photography and learn which details to consider when comparing photographs of cosmetic surgery results." } },
