@@ -1,0 +1,16 @@
+.thank-you { min-height: 620px; }
+.thank-you h1 { margin: 0; font-size: clamp(54px, 6vw, 84px); font-weight: 300; line-height: 1; letter-spacing: -.035em; text-transform: none; }
+.thank-you h1:focus { outline: none; }
+.thank-you h1 em { font-family: var(--font-editorial); font-weight: 400; font-size: 1.12em; }
+.thank-you .ap-contact__content > p { max-width: 34ch; margin-top: 28px; font-size: 18px; line-height: 1.6; color: var(--ivory); text-wrap: pretty; }
+.thank-you__actions { display: flex; align-items: flex-start; flex-direction: column; gap: 16px; margin-top: 36px; }
+.thank-you__actions .button { justify-content: space-between; gap: 32px; min-height: 56px; }
+.thank-you__home { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.thank-you__home:hover { text-decoration-thickness: 2px; }
+@media (max-width: 760px) {
+  .thank-you { min-height: 0; }
+  .thank-you .ap-contact__background { aspect-ratio: 16/11; }
+  .thank-you h1 { font-size: clamp(48px, 11vw, 68px); }
+  .thank-you .ap-contact__content > p { font-size: 17px; margin-top: 24px; }
+  .thank-you__actions { margin-top: 28px; }
+}

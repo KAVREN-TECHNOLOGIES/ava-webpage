@@ -11,6 +11,16 @@ afterEach(() => {
 });
 
 describe("URL-driven language", () => {
+  it("retains the ad campaign when changing gallery filters", async () => {
+    window.history.replaceState({}, "", "/resultados?utm_source=fb_ad&utm_campaign=qa");
+    render(<App />);
+    await userEvent.click(screen.getByRole("button", { name: "Cómo evaluar resultados" }));
+    expect(new URLSearchParams(window.location.search).get("utm_campaign")).toBe("qa");
+    expect(new URLSearchParams(window.location.search).get("tipo")).toBe("clinica");
+    await userEvent.click(screen.getByRole("button", { name: "Fotografías editoriales" }));
+    expect(new URLSearchParams(window.location.search).get("utm_source")).toBe("fb_ad");
+    expect(new URLSearchParams(window.location.search).has("tipo")).toBe(false);
+  });
   it("loads an English procedure directly with localized content, navigation and metadata", () => {
     window.history.replaceState({}, "", "/en/procedures/tummy-tuck");
     render(<App />);

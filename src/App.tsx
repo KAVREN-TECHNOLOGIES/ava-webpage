@@ -6,8 +6,10 @@ import { RoutedLanguageProvider } from "./lib/LocalizedRouting";
 import { siteRoutes, normalizePath, resolveRoute, type SiteRoute } from "./data/routes";
 import { SeoMetadata } from "./components/SeoMetadata";
 import { createSmoothScroll } from "./lib/smoothScroll";
+import { ExternalTracking } from "./components/ExternalTracking";
 import { Home } from "./pages/Home";
 import { BmiPage } from "./pages/BmiPage";
+import { ThankYouPage } from "./pages/ThankYouPage";
 import { ConsultationPage, ExperiencePage, FinancePage, GalleryPage, LegalPage, LocationPage, NotFoundPage, ProcedurePage, ProceduresPage, ResourcesPage, ServicesPage, TeamPage } from "./pages/Pages";
 
 function RouteEffects() {
@@ -53,6 +55,7 @@ function pageElement(route: SiteRoute) {
     case "finance": return <FinancePage />;
     case "location": return <LocationPage />;
     case "contact": return <ConsultationPage />;
+    case "thank-you": return <ThankYouPage />;
     case "resources": return <ResourcesPage resourceTopic={route.topic} />;
     case "bmi": return <BmiPage />;
     case "privacy": return <LegalPage kind="privacidad" />;
@@ -86,7 +89,7 @@ function SiteLayout() {
 }
 
 export function Site() {
-  return <RoutedLanguageProvider><SeoMetadata /><RouteEffects /><SiteLayout /></RoutedLanguageProvider>;
+  return <RoutedLanguageProvider><SeoMetadata /><RouteEffects /><SiteLayout /><ExternalTracking /></RoutedLanguageProvider>;
 }
 
 export function App() {

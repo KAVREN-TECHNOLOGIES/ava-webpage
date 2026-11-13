@@ -22,12 +22,12 @@ for (const route of siteRoutes) {
     await mkdir(dirname(file), { recursive: true });
     await writeFile(file, htmlFor(pathname));
     const absolute = path => new URL(path, site.origin).href;
-    entries.push(`<url><loc>${escapeXml(absolute(pathname))}</loc>${Object.entries({ ...route.paths, "x-default": route.paths.es }).map(([lang, path]) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${escapeXml(absolute(path))}"/>`).join("")}</url>`);
+    if (!route.noindex) entries.push(`<url><loc>${escapeXml(absolute(pathname))}</loc>${Object.entries({ ...route.paths, "x-default": route.paths.es }).map(([lang, path]) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${escapeXml(absolute(path))}"/>`).join("")}</url>`);
   }
 }
 await writeFile("dist/404.html", htmlFor("/pagina-no-encontrada"));
 await writeFile("dist/en/404.html", htmlFor("/en/page-not-found"));
 await writeFile("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`);
 await writeFile("dist/robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.origin}/sitemap.xml\n`);
-await writeFile(".prerender/route-manifest.json", JSON.stringify(siteRoutes.map(route => ({ id: route.id, paths: route.paths })), null, 2));
-console.log(`Prerendered ${entries.length} localized pages, two 404 pages, sitemap.xml and robots.txt for ${site.origin}.`);
+await writeFile(".prerender/route-manifest.json", JSON.stringify(siteRoutes.map(route => ({ id: route.id, paths: route.paths, noindex: !!route.noindex })), null, 2));
+console.log(`Prerendered ${siteRoutes.length * 2} localized pages, two 404 pages, sitemap.xml and robots.txt for ${site.origin}.`);

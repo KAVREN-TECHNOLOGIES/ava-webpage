@@ -15,15 +15,15 @@ export const privacySections: readonly LegalSection[] = [
   {
     title: { es: "Información del formulario", en: "Consultation form information" },
     body: {
-      es: "El formulario solicita tu nombre, apellidos, teléfono y correo electrónico. Si llegas desde el selector de combinaciones, también se conservan los procedimientos que hayas elegido. Facilita información exacta para que podamos contactarte.",
-      en: "The form asks for your first name, last name, telephone number and email address. If you arrive from the combination selector, the procedures you selected are also retained. Provide accurate information so we can contact you.",
+      es: "El formulario solicita tu nombre, apellidos, teléfono y correo electrónico. Al continuar con la política de privacidad aceptada, tus datos de contacto se envían al sistema de gestión de contactos de AVA, proporcionado por HighLevel, para atender tu consulta y contactarte. Si llegas desde el selector de combinaciones, tus selecciones se mantienen como contexto en la web.",
+      en: "The form asks for your first name, last name, telephone number and email address. When you continue after acknowledging this privacy policy, your contact details are sent to AVA's contact management system, provided by HighLevel, to handle your inquiry and contact you. If you arrive from the combination selector, your selections remain as context on the website.",
     },
   },
   {
     title: { es: "Calculadora de BMI", en: "BMI calculator" },
     body: {
-      es: "La calculadora utiliza el peso y la estatura que introduces para estimar tu índice de masa corporal. Puedes corregir las medidas o reiniciar el cálculo en cualquier momento.",
-      en: "The calculator uses the weight and height you enter to estimate your body mass index. You can correct the measurements or reset the calculation at any time.",
+      es: "La calculadora utiliza el peso y la estatura que introduces para estimar tu índice de masa corporal en tu navegador. Esas medidas y el resultado no se incluyen en los datos del formulario de contacto enviados a HighLevel. Puedes corregir las medidas o reiniciar el cálculo en cualquier momento.",
+      en: "The calculator uses the weight and height you enter to estimate your body mass index in your browser. Those measurements and the result are not included in the contact form data sent to HighLevel. You can correct the measurements or reset the calculation at any time.",
     },
   },
   {
@@ -36,8 +36,8 @@ export const privacySections: readonly LegalSection[] = [
   {
     title: { es: "Cookies y navegación", en: "Cookies and browsing" },
     body: {
-      es: "Puedes administrar las cookies y otras preferencias de navegación desde la configuración de tu navegador. El alojamiento de la web puede generar registros técnicos para la entrega y seguridad del sitio, como datos de conexión, del navegador y de las páginas solicitadas.",
-      en: "You can manage cookies and other browsing preferences through your browser settings. Website hosting may generate technical logs for delivery and security, such as connection details, browser information and pages requested.",
+      es: "Utilizamos el seguimiento de HighLevel para registrar visitas a páginas y relacionar las consultas con su origen. Puede utilizar cookies de sesión e información como la URL visitada, la página de referencia, el navegador y los identificadores de campaña incluidos en el enlace de un anuncio. Cuando envías el formulario, esa información puede asociarse a tu contacto para conocer cómo llegaste a AVA. Puedes administrar las cookies desde la configuración de tu navegador. El alojamiento también puede generar registros técnicos para la entrega y seguridad de la web.",
+      en: "We use HighLevel tracking to record page visits and connect inquiries with their source. It may use session cookies and information such as the page URL, referring page, browser and campaign identifiers included in an ad link. When you submit the form, that information may be associated with your contact to understand how you reached AVA. You can manage cookies through your browser settings. Website hosting may also generate technical logs for delivery and security.",
     },
   },
   {

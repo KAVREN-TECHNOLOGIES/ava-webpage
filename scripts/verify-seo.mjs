@@ -18,7 +18,7 @@ for (const route of manifest) for (const language of ["es", "en"]) {
   assert.equal(document.querySelectorAll("title").length, 1, context);
   assert.equal(document.querySelectorAll('meta[name="description"]').length, 1, context);
   assert.equal(document.querySelector('link[rel="canonical"]').href, `https://avacosmetic.com${pathname}`, context);
-  assert.ok(!document.querySelector('meta[name="robots"]').content.includes("noindex"), context);
+  assert.equal(document.querySelector('meta[name="robots"]').content.includes("noindex"), route.noindex, context);
   for (const lang of ["es", "en", "x-default"]) {
     assert.equal(document.querySelector(`link[hreflang="${lang}"]`).href, `https://avacosmetic.com${route.paths[lang === "x-default" ? "es" : lang]}`, context);
   }
@@ -45,7 +45,10 @@ for (const route of manifest) for (const language of ["es", "en"]) {
 }
 assert.equal(titles.size, checked, "Unique titles across all translated pages");
 const sitemap = new JSDOM(await readFile("dist/sitemap.xml", "utf8"), { contentType: "application/xml" }).window.document;
-assert.equal(sitemap.getElementsByTagName("url").length, checked);
+assert.equal(sitemap.getElementsByTagName("url").length, manifest.filter(route => !route.noindex).length * 2);
+for (const route of manifest.filter(route => route.noindex)) for (const path of Object.values(route.paths)) {
+  assert.ok(!Array.from(sitemap.getElementsByTagName("loc")).some(loc => loc.textContent === `https://avacosmetic.com${path}`), `Noindex route excluded from sitemap: ${path}`);
+}
 for (const [file, language] of [["dist/404.html", "es"], ["dist/en/404.html", "en"]]) {
   const document = new JSDOM(await readFile(file, "utf8")).window.document;
   assert.equal(document.documentElement.lang, language);

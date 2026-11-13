@@ -1,4 +1,6 @@
-import { useEffect, useId, useRef, useState, type FormEvent } from "react";
+import { useId, useRef, useState, type FormEvent } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { localizePath } from "../data/routes";
 import { usePageSearchParams as useSearchParams } from "../lib/searchParams";
 import { LocalizedLink as Link } from "../lib/LocalizedRouting";
 import { comboNames, readCombo } from "../data/combo";
@@ -11,29 +13,21 @@ type TextField = Exclude<keyof Fields, "consent">;
 type Errors = Partial<Record<keyof Fields, boolean>>;
 const emptyFields: Fields = { firstName: "", lastName: "", phone: "", email: "", consent: false };
 
-type FormProps = {
-  onReviewChange?: (review: boolean) => void;
-  reviewHeading?: "h1" | "h2" | "h3";
-  reviewHeadingId?: string;
-};
-
-export function ConsultationForm({ onReviewChange, reviewHeading: ReviewHeading = "h3", reviewHeadingId }: FormProps = {}) {
+export function ConsultationForm() {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [searchParams] = useSearchParams();
   const combo = readCombo(searchParams.get("combo"));
   const names = comboNames(combo, language);
   const prefix = useId();
   const [fields, setFields] = useState<Fields>(emptyFields);
   const [errors, setErrors] = useState<Errors>({});
-  const [review, setReview] = useState(false);
-  const changeReview = (value: boolean) => { setReview(value); onReviewChange?.(value); };
   const form = useRef<HTMLFormElement>(null);
-  const reviewTitle = useRef<HTMLHeadingElement>(null);
   const set = <K extends keyof Fields>(key: K, value: Fields[K]) => {
     setFields(current => ({ ...current, [key]: value }));
     setErrors(current => ({ ...current, [key]: false }));
   };
-  useEffect(() => { if (review) reviewTitle.current?.focus(); }, [review]);
 
   const messages: Record<keyof Fields, string> = {
     firstName: t("Escribe tu nombre.", "Enter your first name."),
@@ -48,8 +42,7 @@ export function ConsultationForm({ onReviewChange, reviewHeading: ReviewHeading 
     { key: "phone", name: "phone", label: t("Teléfono", "Phone number"), type: "tel", autocomplete: "tel", placeholder: "(305) 555-0123", max: 30 },
     { key: "email", name: "email", label: t("Correo electrónico", "Email"), type: "email", autocomplete: "email", placeholder: t("tu@correo.com", "you@example.com"), max: 200 },
   ];
-  const submit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const validate = () => {
     const digits = fields.phone.replace(/\D/g, "");
     const next: Errors = {
       firstName: !fields.firstName.trim(),
@@ -61,9 +54,22 @@ export function ConsultationForm({ onReviewChange, reviewHeading: ReviewHeading 
     setErrors(next);
     if (Object.values(next).some(Boolean)) {
       requestAnimationFrame(() => form.current?.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus());
-      return;
+      return false;
     }
-    changeReview(true);
+    return true;
+  };
+  const guardSubmission = (event: { preventDefault: () => void; stopPropagation: () => void }) => {
+    if (validate()) return;
+    // GHL listens on the form and submit button in the capture phase. React's
+    // root capture handler must reject invalid or unconsented clicks before they arrive.
+    event.preventDefault();
+    event.stopPropagation();
+  };
+  const submit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // The SDK's native capture listener has already read this form and its URL.
+    // Keep campaign context in the URL; never add entered contact details.
+    navigate({ pathname: localizePath("/gracias", language), search: location.search }, { replace: true });
   };
   const error = (key: keyof Fields) => errors[key] ?
     <span className="field-error" id={prefix + "-error-" + key}>{messages[key]}</span> : null;
@@ -76,18 +82,11 @@ export function ConsultationForm({ onReviewChange, reviewHeading: ReviewHeading 
     <p>{names}</p>
   </div>;
 
-  if (review) return <div className="consultation-form form-review">
-    <ReviewHeading id={reviewHeadingId} ref={reviewTitle} tabIndex={-1}>{t("Revisión de datos", "Review your details")}</ReviewHeading>
-    <dl>
-      {inputs.map(item => <div key={item.key}><dt>{item.label}</dt><dd>{fields[item.key]}</dd></div>)}
-    </dl>
-    {context}
-    <button className="contact-submit" type="button" onClick={() => changeReview(false)}>
-      {t("Corregir mis datos", "Edit my details")}<span><Icon name="arrow" /></span>
-    </button>
-  </div>;
-
-  return <form ref={form} className="consultation-form" onSubmit={submit} noValidate>
+  return <form ref={form} id="ava-consultation" name="ava_consultation" className="consultation-form"
+    onClickCapture={event => {
+      if (event.target instanceof Element && event.target.closest('button[type="submit"], input[type="submit"]')) guardSubmission(event);
+    }}
+    onSubmitCapture={guardSubmission} onSubmit={submit} noValidate>
     {context}
     {combo.length > 0 && <input type="hidden" name="combo" value={combo.join(",")} />}
     <div className="form-grid">
